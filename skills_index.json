@@ -1109,7 +1109,7 @@
   {
     "id": "computer-vision-expert",
     "path": "skills/computer-vision-expert",
-    "category": "uncategorized",
+    "category": "general",
     "name": "computer-vision-expert",
     "description": "SOTA Computer Vision Expert (2026). Specialized in YOLO26, Segment Anything 3 (SAM 3), Vision Language Models, and real-time spatial analysis.",
     "risk": "safe",
@@ -1748,7 +1748,7 @@
   {
     "id": "docker-expert",
     "path": "skills/docker-expert",
-    "category": "uncategorized",
+    "category": "devops",
     "name": "docker-expert",
     "description": "Docker containerization expert with deep knowledge of multi-stage builds, image optimization, container security, Docker Compose orchestration, and production deployment patterns. Use PROACTIVELY for Dockerfile optimization, container issues, image size problems, security hardening, networking, and orchestration challenges.",
     "risk": "unknown",
@@ -3359,7 +3359,7 @@
   {
     "id": "nestjs-expert",
     "path": "skills/nestjs-expert",
-    "category": "uncategorized",
+    "category": "framework",
     "name": "nestjs-expert",
     "description": "Nest.js framework expert specializing in module architecture, dependency injection, middleware, guards, interceptors, testing with Jest/Supertest, TypeORM/Mongoose integration, and Passport.js authentication. Use PROACTIVELY for any Nest.js application issues including architecture decisions, testing strategies, performance optimization, or debugging complex dependency injection problems. If a specialized expert is a better fit, I will recommend switching and stop.",
     "risk": "unknown",
@@ -5213,7 +5213,7 @@
   {
     "id": "typescript-expert",
     "path": "skills/typescript-expert",
-    "category": "uncategorized",
+    "category": "framework",
     "name": "typescript-expert",
     "description": "TypeScript and JavaScript expert with deep knowledge of type-level programming, performance optimization, monorepo management, migration strategies, and modern tooling. Use PROACTIVELY for any TypeScript/JavaScript issues including complex type gymnastics, build performance, debugging, and architectural decisions. If a specialized expert is a better fit, I will recommend switching and stop.",
     "risk": "unknown",

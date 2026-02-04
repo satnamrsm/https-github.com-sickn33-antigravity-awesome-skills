@@ -57,6 +57,7 @@ def generate_index(skills_dir, output_file):
             if "description" in metadata: skill_info["description"] = metadata["description"]
             if "risk" in metadata: skill_info["risk"] = metadata["risk"]
             if "source" in metadata: skill_info["source"] = metadata["source"]
+            if "category" in metadata: skill_info["category"] = metadata["category"]
             
             # Fallback for description if missing in frontmatter (legacy support)
             if not skill_info["description"]:
