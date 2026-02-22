@@ -91,11 +91,11 @@ The following LibreOffice skills are available in the `skills/libreoffice/` dire
 
 | Skill | Description |
 |-------|-------------|
-| `libreoffice-writer` | Document creation and automation (ODT) |
-| `libreoffice-calc` | Spreadsheet automation (ODS) |
-| `libreoffice-impress` | Presentation creation (ODP) |
-| `libreoffice-draw` | Vector graphics and diagrams (ODG) |
-| `libreoffice-base` | Database management (ODB) |
+| `writer` | Document creation and automation (ODT) |
+| `calc` | Spreadsheet automation (ODS) |
+| `impress` | Presentation creation (ODP) |
+| `draw` | Vector graphics and diagrams (ODG) |
+| `base` | Database management (ODB) |
 
 ## Usage
 

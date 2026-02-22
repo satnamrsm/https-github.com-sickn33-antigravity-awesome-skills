@@ -1,6 +1,6 @@
 ---
-name: libreoffice-base
-description: "Database management and automation with LibreOffice Base. Create ODB databases, connect to external data sources, automate database operations, and integrate with office workflows."
+name: base
+description: "Database management, forms, reports, and data operations with LibreOffice Base."
 source: personal
 risk: safe
 domain: office-productivity
@@ -22,7 +22,6 @@ Use this skill when:
 - Automating database operations and reports
 - Creating forms and reports
 - Building database applications
-- Working with embedded HSQLDB or Firebird
 
 ## Core Capabilities
 
@@ -31,26 +30,22 @@ Use this skill when:
 - Design tables, views, and relationships
 - Create embedded HSQLDB/Firebird databases
 - Connect to external databases
-- Build database templates
 
 ### 2. Data Operations
 - Import data from CSV, spreadsheets
 - Export data to various formats
 - Query execution and management
 - Batch data processing
-- Data migration between sources
 
 ### 3. Form and Report Automation
 - Create data entry forms
 - Design custom reports
 - Automate report generation
 - Build form templates
-- Dynamic report generation
 
 ### 4. Query and SQL
 - Visual query design
 - SQL query execution
-- Stored procedure calls
 - Query optimization
 - Result set manipulation
 
@@ -58,7 +53,6 @@ Use this skill when:
 - Command-line automation
 - Python scripting with UNO
 - JDBC/ODBC connectivity
-- REST API integration
 
 ## Workflows
 
@@ -83,7 +77,6 @@ def create_database():
     )
     smgr = ctx.ServiceManager
     doc = smgr.createInstanceWithContext("com.sun.star.sdb.DatabaseDocument", ctx)
-    # Configure database
     doc.storeToURL("file:///path/to/database.odb", ())
     doc.close(True)
 ```
@@ -103,10 +96,7 @@ def connect_to_mysql(host, port, database, user, password):
     )
     smgr = ctx.ServiceManager
     
-    # Create database document
     doc = smgr.createInstanceWithContext("com.sun.star.sdb.DatabaseDocument", ctx)
-    
-    # Set up connection
     datasource = doc.getDataSource()
     datasource.URL = f"sdbc:mysql:jdbc:mysql://{host}:{port}/{database}"
     datasource.Properties["UserName"] = user
@@ -114,30 +104,6 @@ def connect_to_mysql(host, port, database, user, password):
     
     doc.storeToURL("file:///path/to/connected.odb", ())
     return doc
-```
-
-### Data Import/Export
-
-```bash
-# Export query results to CSV
-# (Requires macro or UNO scripting)
-
-# Import CSV to table
-# (Requires macro or UNO scripting)
-```
-
-### Report Generation
-
-```python
-import subprocess
-
-def generate_report(odb_path, query, output_path):
-    """
-    Generate report from database query
-    """
-    # Implementation using UNO to execute query
-    # and format results
-    pass
 ```
 
 ## Database Connection Reference
@@ -191,8 +157,6 @@ pip install sqlalchemy # SQL toolkit
 6. Document database schema
 7. Use appropriate data types
 8. Handle connection errors gracefully
-9. Log database operations
-10. Clean temporary files
 
 ## Troubleshooting
 
@@ -217,9 +181,8 @@ soffice --headless --accept="socket,host=localhost,port=8100;urp;"
 
 ## Related Skills
 
-- libreoffice-writer
-- libreoffice-calc
-- libreoffice-impress
-- libreoffice-draw
+- writer
+- calc
+- impress
+- draw
 - workflow-automation
-- database-design

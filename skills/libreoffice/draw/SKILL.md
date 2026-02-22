@@ -1,6 +1,6 @@
 ---
-name: libreoffice-draw
-description: "Comprehensive vector graphics and diagram creation with LibreOffice Draw. Create ODG drawings, convert between formats (SVG, PDF, PNG), automate diagram generation, and integrate with office workflows."
+name: draw
+description: "Vector graphics and diagram creation, format conversion (ODG/SVG/PDF) with LibreOffice Draw."
 source: personal
 risk: safe
 domain: office-productivity
@@ -22,7 +22,6 @@ Use this skill when:
 - Automating diagram and flowchart generation
 - Creating technical drawings and schematics
 - Batch processing graphics operations
-- Working with open standards for vector graphics
 
 ## Core Capabilities
 
@@ -31,33 +30,28 @@ Use this skill when:
 - Generate diagrams from templates
 - Create flowcharts and org charts
 - Design technical drawings
-- Build vector illustrations
 
 ### 2. Format Conversion
 - ODG to other formats: SVG, PDF, PNG, JPG
 - Other formats to ODG: SVG, PDF
 - Batch conversion of multiple files
-- Preserve layers, vectors, and quality
 
 ### 3. Diagram Automation
 - Template-based diagram generation
 - Automated flowchart creation
-- Dynamic shape and connector generation
+- Dynamic shape generation
 - Batch diagram production
-- Data-driven visualization
 
 ### 4. Graphics Manipulation
 - Shape creation and manipulation
 - Path and bezier curve editing
 - Layer management
 - Text and label insertion
-- Image embedding and positioning
 
 ### 5. Integration
 - Command-line automation via soffice
 - Python scripting with UNO
 - Integration with workflow tools
-- REST API integration
 
 ## Workflows
 
@@ -83,7 +77,6 @@ def create_drawing():
     smgr = ctx.ServiceManager
     doc = smgr.createInstanceWithContext("com.sun.star.drawing.DrawingDocument", ctx)
     page = doc.getDrawPages().getByIndex(0)
-    # Add shapes to page
     doc.storeToURL("file:///path/to/drawing.odg", ())
     doc.close(True)
 ```
@@ -107,22 +100,6 @@ soffice --headless --convert-to odg drawing.svg
 for file in *.odg; do
     soffice --headless --convert-to pdf "$file"
 done
-```
-
-### Flowchart Automation
-```python
-import subprocess
-import tempfile
-from pathlib import Path
-
-def create_flowchart(shapes_data, output_path):
-    """
-    Create flowchart from shape definitions
-    shapes_data: list of shape definitions
-    """
-    # Create template-based flowchart
-    # Implementation depends on specific requirements
-    pass
 ```
 
 ## Format Conversion Reference
@@ -158,9 +135,6 @@ pip install svgwrite  # SVG generation
 5. Store ODG source files in version control
 6. Test conversions thoroughly
 7. Export to SVG for web use
-8. Handle conversion failures gracefully
-9. Log automation operations
-10. Clean temporary files
 
 ## Troubleshooting
 
@@ -172,8 +146,8 @@ soffice --headless --accept="socket,host=localhost,port=8100;urp;"
 
 ### Quality Issues in PNG Export
 ```bash
-# Use higher resolution
-soffice --headless --convert-to png:PNG_drawing_Export   --filterData='{"Width":2048,"Height":2048}' drawing.odg
+soffice --headless --convert-to png:PNG_drawing_Export \
+  --filterData='{"Width":2048,"Height":2048}' drawing.odg
 ```
 
 ## Resources
@@ -184,8 +158,8 @@ soffice --headless --convert-to png:PNG_drawing_Export   --filterData='{"Width":
 
 ## Related Skills
 
-- libreoffice-writer
-- libreoffice-calc
-- libreoffice-impress
-- libreoffice-base
+- writer
+- calc
+- impress
+- base
 - workflow-automation

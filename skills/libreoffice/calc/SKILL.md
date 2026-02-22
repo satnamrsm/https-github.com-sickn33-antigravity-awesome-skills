@@ -1,6 +1,6 @@
 ---
-name: libreoffice-calc
-description: "Comprehensive spreadsheet creation, editing, and automation with LibreOffice Calc. Create ODS spreadsheets, convert between formats (XLSX, CSV, PDF), automate data processing, and integrate with office workflows."
+name: calc
+description: "Spreadsheet creation, format conversion (ODS/XLSX/CSV), formulas, data automation with LibreOffice Calc."
 source: personal
 risk: safe
 domain: office-productivity
@@ -22,7 +22,6 @@ Use this skill when:
 - Automating data processing and analysis
 - Creating formulas, charts, and pivot tables
 - Batch processing spreadsheet operations
-- Working with open standards for spreadsheets
 
 ## Core Capabilities
 
@@ -31,33 +30,28 @@ Use this skill when:
 - Generate spreadsheets from templates
 - Create data entry forms
 - Build dashboards and reports
-- Design charts and graphs
 
 ### 2. Format Conversion
 - ODS to other formats: XLSX, CSV, PDF, HTML
 - Other formats to ODS: XLSX, XLS, CSV, DBF
 - Batch conversion of multiple files
-- Preserve formulas, formatting, charts
 
 ### 3. Data Automation
 - Formula automation and calculations
 - Data import from CSV, database, APIs
 - Data export to various formats
 - Batch data processing
-- Scheduled report generation
 
 ### 4. Data Analysis
 - Pivot tables and data summarization
 - Statistical functions and analysis
-- What-if analysis and scenarios
 - Data validation and filtering
 - Conditional formatting
 
 ### 5. Integration
 - Command-line automation via soffice
 - Python scripting with UNO
-- Database connectivity (JDBC, ODBC)
-- REST API integration
+- Database connectivity
 
 ## Workflows
 
@@ -84,7 +78,7 @@ def create_spreadsheet():
     doc = smgr.createInstanceWithContext("com.sun.star.sheet.SpreadsheetDocument", ctx)
     sheets = doc.getSheets()
     sheet = sheets.getByIndex(0)
-    cell = sheet.getCellByPosition(0, 0)  # A1
+    cell = sheet.getCellByPosition(0, 0)
     cell.setString("Hello from LibreOffice Calc!")
     doc.storeToURL("file:///path/to/spreadsheet.ods", ())
     doc.close(True)
@@ -122,25 +116,6 @@ for file in *.ods; do
 done
 ```
 
-### Data Processing Automation
-```python
-import subprocess
-import csv
-from pathlib import Path
-
-def process_csv_to_ods(csv_path, ods_path):
-    """Convert CSV to ODS with formatting"""
-    # First convert using soffice
-    subprocess.run([
-        'soffice', '--headless',
-        '--convert-to', 'ods',
-        csv_path
-    ])
-    
-    # Then apply formatting using UNO
-    # (implementation depends on specific requirements)
-```
-
 ### Formula Automation
 ```python
 import uno
@@ -157,43 +132,14 @@ def create_formula_spreadsheet():
     doc = smgr.createInstanceWithContext("com.sun.star.sheet.SpreadsheetDocument", ctx)
     sheet = doc.getSheets().getByIndex(0)
     
-    # Set values
-    sheet.getCellByPosition(0, 0).setDoubleValue(100)  # A1
-    sheet.getCellByPosition(0, 1).setDoubleValue(200)  # A2
+    sheet.getCellByPosition(0, 0).setDoubleValue(100)
+    sheet.getCellByPosition(0, 1).setDoubleValue(200)
     
-    # Set formula: =A1+A2
-    cell = sheet.getCellByPosition(0, 2)  # A3
+    cell = sheet.getCellByPosition(0, 2)
     cell.setFormula("SUM(A1:A2)")
     
     doc.storeToURL("file:///path/to/formulas.ods", ())
     doc.close(True)
-```
-
-### Batch Data Processing
-```python
-import subprocess
-from pathlib import Path
-from concurrent.futures import ProcessPoolExecutor
-
-def convert_to_pdf(input_file, output_dir):
-    subprocess.run([
-        'soffice', '--headless',
-        '--convert-to', 'pdf',
-        '--outdir', str(output_dir),
-        str(input_file)
-    ])
-
-def batch_convert(pattern, output_format, output_dir):
-    input_files = list(Path('.').glob(pattern))
-    Path(output_dir).mkdir(parents=True, exist_ok=True)
-    
-    with ProcessPoolExecutor() as executor:
-        executor.map(convert_to_pdf, input_files, [output_dir] * len(input_files))
-    
-    print(f"Converted {len(input_files)} files")
-
-# Usage
-batch_convert('*.ods', 'pdf', './output/pdf')
 ```
 
 ## Format Conversion Reference
@@ -230,8 +176,6 @@ pip install pandas    # Data analysis
 6. Test conversions thoroughly
 7. Use CSV for data exchange
 8. Handle conversion failures gracefully
-9. Log automation operations
-10. Clean temporary files
 
 ## Troubleshooting
 
@@ -239,12 +183,6 @@ pip install pandas    # Data analysis
 ```bash
 killall soffice.bin
 soffice --headless --accept="socket,host=localhost,port=8100;urp;"
-```
-
-### Formula Not Calculating
-```bash
-# Recalculate in LibreOffice GUI or use:
-soffice --headless --convert-to ods --force spreadsheet.ods
 ```
 
 ## Resources
@@ -255,9 +193,9 @@ soffice --headless --convert-to ods --force spreadsheet.ods
 
 ## Related Skills
 
-- libreoffice-writer
-- libreoffice-impress
-- libreoffice-draw
-- libreoffice-base
+- writer
+- impress
+- draw
+- base
 - xlsx-official
 - workflow-automation

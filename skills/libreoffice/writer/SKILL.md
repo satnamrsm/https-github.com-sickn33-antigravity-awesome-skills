@@ -1,6 +1,6 @@
 ---
-name: libreoffice-writer
-description: "Comprehensive document creation, editing, and automation with LibreOffice Writer. Create ODT documents, convert between formats (DOCX, PDF, HTML), automate document workflows, and integrate with office productivity tools."
+name: writer
+description: "Document creation, format conversion (ODT/DOCX/PDF), mail merge, and automation with LibreOffice Writer."
 source: personal
 risk: safe
 domain: office-productivity
@@ -17,12 +17,11 @@ LibreOffice Writer skill for creating, editing, converting, and automating docum
 ## When to Use This Skill
 
 Use this skill when:
-- Creating new documents in ODT format (native LibreOffice format)
+- Creating new documents in ODT format
 - Converting documents between formats (ODT <-> DOCX, PDF, HTML, RTF, TXT)
 - Automating document generation workflows
 - Performing batch document operations
 - Creating templates and standardized document formats
-- Working with open standards and open-source document workflows
 
 ## Core Capabilities
 
@@ -31,12 +30,11 @@ Use this skill when:
 - Generate documents from templates
 - Create mail merge documents
 - Build forms with fillable fields
-- Generate reports programmatically
 
 ### 2. Format Conversion
 - ODT to other formats: DOCX, PDF, HTML, RTF, TXT, EPUB
 - Other formats to ODT: DOCX, DOC, RTF, HTML, TXT
-- Batch conversion: Process multiple documents simultaneously
+- Batch conversion of multiple documents
 
 ### 3. Document Automation
 - Template-based document generation
@@ -48,15 +46,12 @@ Use this skill when:
 - Text extraction and insertion
 - Style management and application
 - Table creation and manipulation
-- Image embedding and positioning
 - Header/footer management
-- Table of contents generation
 
 ### 5. Integration
 - Command-line automation via soffice
-- Python scripting with UNO (Universal Network Objects)
+- Python scripting with UNO
 - Integration with workflow automation tools
-- REST API integration for document services
 
 ## Workflows
 
@@ -157,8 +152,8 @@ soffice --draw      # Draw
 ## Python Libraries
 
 ```bash
-pip install odfpy  # ODF manipulation
-pip install ezodf  # Easier ODF handling
+pip install odfpy     # ODF manipulation
+pip install ezodf     # Easier ODF handling
 ```
 
 ## Best Practices
@@ -172,7 +167,7 @@ pip install ezodf  # Easier ODF handling
 7. Embed fonts for PDF distribution
 8. Handle conversion failures gracefully
 9. Log automation operations
-10. Clean temporary files after processing
+10. Clean temporary files
 
 ## Troubleshooting
 
@@ -196,10 +191,10 @@ soffice --headless --convert-to pdf:writer_pdf_Export document.odt
 
 ## Related Skills
 
-- libreoffice-calc
-- libreoffice-impress
-- libreoffice-draw
-- libreoffice-base
+- calc
+- impress
+- draw
+- base
 - docx-official
 - pdf-official
 - workflow-automation
