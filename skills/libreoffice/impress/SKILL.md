@@ -1,6 +1,6 @@
 ---
-name: libreoffice-impress
-description: "Comprehensive presentation creation, editing, and automation with LibreOffice Impress. Create ODP presentations, convert between formats (PPTX, PDF), automate slide generation, and integrate with office workflows."
+name: impress
+description: "Presentation creation, format conversion (ODP/PPTX/PDF), slide automation with LibreOffice Impress."
 source: personal
 risk: safe
 domain: office-productivity
@@ -22,7 +22,6 @@ Use this skill when:
 - Automating slide generation from templates
 - Batch processing presentation operations
 - Creating presentation templates
-- Working with open standards for presentations
 
 ## Core Capabilities
 
@@ -31,25 +30,21 @@ Use this skill when:
 - Generate presentations from templates
 - Create slide masters and layouts
 - Build interactive presentations
-- Design custom slide templates
 
 ### 2. Format Conversion
 - ODP to other formats: PPTX, PDF, HTML, SWF
 - Other formats to ODP: PPTX, PPT, PDF
 - Batch conversion of multiple files
-- Preserve animations, transitions, media
 
 ### 3. Slide Automation
 - Template-based slide generation
 - Batch slide creation from data
 - Automated content insertion
-- Dynamic chart and table generation
-- Master slide application
+- Dynamic chart generation
 
 ### 4. Content Manipulation
 - Text and image insertion
 - Shape and diagram creation
-- Chart and graph generation
 - Animation and transition control
 - Speaker notes management
 
@@ -57,7 +52,6 @@ Use this skill when:
 - Command-line automation via soffice
 - Python scripting with UNO
 - Integration with workflow tools
-- REST API integration
 
 ## Workflows
 
@@ -84,7 +78,6 @@ def create_presentation():
     doc = smgr.createInstanceWithContext("com.sun.star.presentation.PresentationDocument", ctx)
     slides = doc.getDrawPages()
     slide = slides.getByIndex(0)
-    # Add content to slide
     doc.storeToURL("file:///path/to/presentation.odp", ())
     doc.close(True)
 ```
@@ -157,9 +150,6 @@ pip install odfpy     # ODF manipulation
 5. Store ODP source files in version control
 6. Test conversions thoroughly
 7. Keep file sizes manageable
-8. Handle conversion failures gracefully
-9. Log automation operations
-10. Clean temporary files
 
 ## Troubleshooting
 
@@ -169,11 +159,6 @@ killall soffice.bin
 soffice --headless --accept="socket,host=localhost,port=8100;urp;"
 ```
 
-### Animation Issues After Conversion
-- Some animations may not translate perfectly between formats
-- Test critical animations after conversion
-- Consider using PDF for static distribution
-
 ## Resources
 
 - [LibreOffice Impress Guide](https://documentation.libreoffice.org/)
@@ -181,9 +166,9 @@ soffice --headless --accept="socket,host=localhost,port=8100;urp;"
 
 ## Related Skills
 
-- libreoffice-writer
-- libreoffice-calc
-- libreoffice-draw
-- libreoffice-base
+- writer
+- calc
+- draw
+- base
 - pptx-official
 - workflow-automation
