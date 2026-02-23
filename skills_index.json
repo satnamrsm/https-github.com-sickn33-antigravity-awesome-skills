@@ -399,10 +399,10 @@
     "id": "architect-review",
     "path": "skills/architect-review",
     "category": "uncategorized",
-    "name": "Architect Review",
-    "description": "You are a master software architect specializing in modern software architecture patterns, clean architecture principles, and distributed systems design.",
+    "name": "architect-review",
+    "description": "Master software architect specializing in modern architecture patterns, clean architecture, microservices, event-driven systems, and DDD. Reviews system designs and code changes for architectural integrity, scalability, and maintainability. Use PROACTIVELY for architectural decisions.",
     "risk": "unknown",
-    "source": "unknown"
+    "source": "community"
   },
   {
     "id": "architecture",
@@ -540,12 +540,48 @@
     "source": "community"
   },
   {
+    "id": "aws-compliance-checker",
+    "path": "skills/security/aws-compliance-checker",
+    "category": "security",
+    "name": "aws-compliance-checker",
+    "description": "Automated compliance checking against CIS, PCI-DSS, HIPAA, and SOC 2 benchmarks",
+    "risk": "safe",
+    "source": "community"
+  },
+  {
+    "id": "aws-iam-best-practices",
+    "path": "skills/security/aws-iam-best-practices",
+    "category": "security",
+    "name": "aws-iam-best-practices",
+    "description": "IAM policy review, hardening, and least privilege implementation",
+    "risk": "safe",
+    "source": "community"
+  },
+  {
     "id": "aws-penetration-testing",
     "path": "skills/aws-penetration-testing",
     "category": "uncategorized",
     "name": "aws-penetration-testing",
     "description": "This skill should be used when the user asks to \"pentest AWS\", \"test AWS security\", \"enumerate IAM\", \"exploit cloud infrastructure\", \"AWS privilege escalation\", \"S3 bucket testing...",
     "risk": "unknown",
+    "source": "community"
+  },
+  {
+    "id": "aws-secrets-rotation",
+    "path": "skills/security/aws-secrets-rotation",
+    "category": "security",
+    "name": "aws-secrets-rotation",
+    "description": "Automate AWS secrets rotation for RDS, API keys, and credentials",
+    "risk": "safe",
+    "source": "community"
+  },
+  {
+    "id": "aws-security-audit",
+    "path": "skills/security/aws-security-audit",
+    "category": "security",
+    "name": "aws-security-audit",
+    "description": "Comprehensive AWS security posture assessment using AWS CLI and security best practices",
+    "risk": "safe",
     "source": "community"
   },
   {
@@ -1911,10 +1947,10 @@
     "id": "c-pro",
     "path": "skills/c-pro",
     "category": "uncategorized",
-    "name": "C Pro",
-    "description": "- Working on c pro tasks or workflows - Needing guidance, best practices, or checklists for c pro",
+    "name": "c-pro",
+    "description": "Write efficient C code with proper memory management, pointer arithmetic, and system calls. Handles embedded systems, kernel modules, and performance-critical code. Use PROACTIVELY for C optimization, memory issues, or system programming.",
     "risk": "unknown",
-    "source": "unknown"
+    "source": "community"
   },
   {
     "id": "c4-code",
@@ -2223,15 +2259,6 @@
     "source": "community"
   },
   {
-    "id": "code-reviewer",
-    "path": "skills/code-reviewer",
-    "category": "uncategorized",
-    "name": "Code Reviewer",
-    "description": "- Working on code reviewer tasks or workflows - Needing guidance, best practices, or checklists for code reviewer",
-    "risk": "unknown",
-    "source": "unknown"
-  },
-  {
     "id": "code-documentation-code-explain",
     "path": "skills/code-documentation-code-explain",
     "category": "uncategorized",
@@ -2300,6 +2327,15 @@
     "category": "uncategorized",
     "name": "code-review-excellence",
     "description": "Master effective code review practices to provide constructive feedback, catch bugs early, and foster knowledge sharing while maintaining team morale. Use when reviewing pull requests, establishing...",
+    "risk": "unknown",
+    "source": "community"
+  },
+  {
+    "id": "code-reviewer",
+    "path": "skills/code-reviewer",
+    "category": "uncategorized",
+    "name": "code-reviewer",
+    "description": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.",
     "risk": "unknown",
     "source": "community"
   },
@@ -3033,15 +3069,6 @@
     "source": "community"
   },
   {
-    "id": "design-orchestration",
-    "path": "skills/design-orchestration",
-    "category": "uncategorized",
-    "name": "Design Orchestration",
-    "description": "Ensure that **ideas become designs**, **designs are reviewed**, and **only validated designs reach implementation**.",
-    "risk": "unknown",
-    "source": "unknown"
-  },
-  {
     "id": "design-md",
     "path": "skills/design-md",
     "category": "uncategorized",
@@ -3049,6 +3076,15 @@
     "description": "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files",
     "risk": "safe",
     "source": "https://github.com/google-labs-code/stitch-skills/tree/main/skills/design-md"
+  },
+  {
+    "id": "design-orchestration",
+    "path": "skills/design-orchestration",
+    "category": "uncategorized",
+    "name": "design-orchestration",
+    "description": "Orchestrates design workflows by routing work through brainstorming, multi-agent review, and execution readiness in the correct order. Prevents premature implementation, skipped validation, and unreviewed high-risk designs.",
+    "risk": "unknown",
+    "source": "community"
   },
   {
     "id": "devops-troubleshooter",
@@ -4089,10 +4125,10 @@
     "id": "haskell-pro",
     "path": "skills/haskell-pro",
     "category": "uncategorized",
-    "name": "Haskell Pro",
-    "description": "- Working on haskell pro tasks or workflows - Needing guidance, best practices, or checklists for haskell pro",
+    "name": "haskell-pro",
+    "description": "Expert Haskell engineer specializing in advanced type systems, pure functional design, and high-reliability software. Use PROACTIVELY for type-level programming, concurrency, and architecture guidance.",
     "risk": "unknown",
-    "source": "unknown"
+    "source": "community"
   },
   {
     "id": "helm-chart-scaffolding",
@@ -5151,10 +5187,10 @@
     "id": "multi-agent-brainstorming",
     "path": "skills/multi-agent-brainstorming",
     "category": "uncategorized",
-    "name": "Multi Agent Brainstorming",
-    "description": "Transform a single-agent design into a **robust, review-validated design** by simulating a formal peer-review process using multiple constrained agents.",
+    "name": "multi-agent-brainstorming",
+    "description": "Use this skill when a design or idea requires higher confidence, risk reduction, or formal review. This skill orchestrates a structured, sequential multi-agent design review where each agent has a strict, non-overlapping role. It prevents blind spots, false confidence, and premature convergence.",
     "risk": "unknown",
-    "source": "unknown"
+    "source": "community"
   },
   {
     "id": "multi-agent-patterns",
@@ -5236,6 +5272,24 @@
     "description": "Expert patterns for Neon serverless Postgres, branching, connection pooling, and Prisma/Drizzle integration Use when: neon database, serverless postgres, database branching, neon postgres, postgres...",
     "risk": "unknown",
     "source": "vibeship-spawner-skills (Apache 2.0)"
+  },
+  {
+    "id": "nerdzao-elite",
+    "path": "skills/nerdzao-elite",
+    "category": "uncategorized",
+    "name": "nerdzao-elite",
+    "description": "Senior Elite Software Engineer (15+) and Senior Product Designer. Full workflow with planning, architecture, TDD, clean code, and pixel-perfect UX validation.",
+    "risk": "safe",
+    "source": "community"
+  },
+  {
+    "id": "nerdzao-elite-gemini-high",
+    "path": "skills/nerdzao-elite-gemini-high",
+    "category": "uncategorized",
+    "name": "nerdzao-elite-gemini-high",
+    "description": "Modo Elite Coder + UX Pixel-Perfect otimizado especificamente para Gemini 3.1 Pro High. Workflow completo com foco em qualidade m\u00e1xima e efici\u00eancia de tokens.",
+    "risk": "safe",
+    "source": "community"
   },
   {
     "id": "nestjs-expert",
@@ -5583,10 +5637,10 @@
     "id": "performance-engineer",
     "path": "skills/performance-engineer",
     "category": "uncategorized",
-    "name": "Performance Engineer",
-    "description": "You are a performance engineer specializing in modern application optimization, observability, and scalable system performance.",
+    "name": "performance-engineer",
+    "description": "Expert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed tracing, load testing, multi-tier caching, Core Web Vitals, and performance monitoring. Handles end-to-end optimization, real user monitoring, and scalability patterns. Use PROACTIVELY for performance optimization, observability, or scalability challenges.",
     "risk": "unknown",
-    "source": "unknown"
+    "source": "community"
   },
   {
     "id": "performance-profiling",
@@ -6330,10 +6384,10 @@
     "id": "search-specialist",
     "path": "skills/search-specialist",
     "category": "uncategorized",
-    "name": "Search Specialist",
-    "description": "- Working on search specialist tasks or workflows - Needing guidance, best practices, or checklists for search specialist",
+    "name": "search-specialist",
+    "description": "Expert web researcher using advanced search techniques and synthesis. Masters search operators, result filtering, and multi-source verification. Handles competitive analysis and fact-checking. Use PROACTIVELY for deep research, information gathering, or trend analysis.",
     "risk": "unknown",
-    "source": "unknown"
+    "source": "community"
   },
   {
     "id": "secrets-management",

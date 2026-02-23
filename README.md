@@ -1,6 +1,6 @@
-# 🌌 Antigravity Awesome Skills: 883+ Agentic Skills for Claude Code, Gemini CLI, Kiro, Cursor, Copilot & More
+# 🌌 Antigravity Awesome Skills: 889+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
 
-> **The Ultimate Collection of 883+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Kiro CLI, Kiro IDE, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
+> **The Ultimate Collection of 889+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Anthropic-purple)](https://claude.ai)
@@ -17,7 +17,7 @@
 
 If this project helps you, you can [support it here](https://buymeacoffee.com/sickn33) or simply ⭐ the repo.
 
-**Antigravity Awesome Skills** is a curated, battle-tested library of **883 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
+**Antigravity Awesome Skills** is a curated, battle-tested library of **889 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
 
 - 🟣 **Claude Code** (Anthropic CLI)
 - 🔵 **Gemini CLI** (Google DeepMind)
@@ -42,7 +42,7 @@ This repository provides essential skills to transform your AI assistant into a 
 - [🎁 Curated Collections (Bundles)](#curated-collections)
 - [🧭 Antigravity Workflows](#antigravity-workflows)
 - [📦 Features & Categories](#features--categories)
-- [📚 Browse 883+ Skills](#browse-883-skills)
+- [📚 Browse 889+ Skills](#browse-889-skills)
 - [🤝 How to Contribute](#how-to-contribute)
 - [🤝 Community](#community)
 - [☕ Support the Project](#support-the-project)
@@ -56,11 +56,11 @@ This repository provides essential skills to transform your AI assistant into a 
 
 ## New Here? Start Here!
 
-**Welcome to the V5.9.0 Workflows Edition.** This isn't just a list of scripts; it's a complete operating system for your AI Agent.
+**Welcome to the V6.0.0 Workflows Edition.** This isn't just a list of scripts; it's a complete operating system for your AI Agent.
 
 ### 1. 🐣 Context: What is this?
 
-**Antigravity Awesome Skills** (Release 5.9.0) is a massive upgrade to your AI's capabilities.
+**Antigravity Awesome Skills** (Release 6.0.0) is a massive upgrade to your AI's capabilities.
 
 AI Agents (like Claude Code, Cursor, or Gemini) are smart, but they lack **specific tools**. They don't know your company's "Deployment Protocol" or the specific syntax for "AWS CloudFormation".
 **Skills** are small markdown files that teach them how to do these specific tasks perfectly, every time.
@@ -116,10 +116,10 @@ These skills follow the universal **SKILL.md** format and work with any AI codin
 | **Kiro CLI**    | CLI  | `(Auto) Skills load on-demand`    | Global: `~/.kiro/skills/` · Workspace: `.kiro/skills/` |
 | **Kiro IDE**    | IDE  | `/skill-name or (Auto)`           | Global: `~/.kiro/skills/` · Workspace: `.kiro/skills/` |
 | **Antigravity** | IDE  | `(Agent Mode) Use skill...`       | Global: `~/.gemini/antigravity/skills/` · Workspace: `.agent/skills/` |
-| **Cursor**      | IDE  | `@skill-name (in Chat)`           | `.cursor/skills/` |
-| **Copilot**     | Ext  | `(Paste content manually)`        | N/A               |
-| **OpenCode**    | CLI  | `opencode run @skill-name`        | `.agents/skills/`  |
-| **AdaL CLI**    | CLI  | `(Auto) Skills load on-demand`    | `.adal/skills/`   |
+| **Cursor**      | IDE  | `@skill-name (in Chat)`           | `.cursor/skills/`                                                     |
+| **Copilot**     | Ext  | `(Paste content manually)`        | N/A                                                                   |
+| **OpenCode**    | CLI  | `opencode run @skill-name`        | `.agents/skills/`                                                     |
+| **AdaL CLI**    | CLI  | `(Auto) Skills load on-demand`    | `.adal/skills/`                                                       |
 
 > [!TIP]
 > **Default installer path**: `~/.gemini/antigravity/skills` (Antigravity global). Use `--path ~/.agent/skills` for workspace-specific install. For manual clone, `.agent/skills/` works as workspace path for Antigravity.
@@ -162,6 +162,9 @@ npx antigravity-awesome-skills --gemini
 # Codex CLI
 npx antigravity-awesome-skills --codex
 
+# Kiro CLI
+npx antigravity-awesome-skills --kiro
+
 # OpenCode
 npx antigravity-awesome-skills --path .agents/skills
 
@@ -199,6 +202,9 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .gemini/skil
 
 # Codex CLI specific
 git clone https://github.com/sickn33/antigravity-awesome-skills.git .codex/skills
+
+# Kiro CLI specific
+git clone https://github.com/sickn33/antigravity-awesome-skills.git .kiro/skills
 
 # Cursor specific
 git clone https://github.com/sickn33/antigravity-awesome-skills.git .cursor/skills
@@ -265,7 +271,7 @@ npx antigravity-awesome-skills
 
 **Bundles** are curated groups of skills for a specific role or goal (for example: `Web Wizard`, `Security Engineer`, `OSS Maintainer`).
 
-They help you avoid picking from 883+ skills one by one.
+They help you avoid picking from 889+ skills one by one.
 
 ### ⚠️ Important: Bundles Are NOT Separate Installations!
 
@@ -274,11 +280,13 @@ They help you avoid picking from 883+ skills one by one.
 **Answer: NO!** Here's what bundles actually are:
 
 **What bundles ARE:**
+
 - ✅ Recommended skill lists organized by role
 - ✅ Curated starting points to help you decide what to use
 - ✅ Time-saving shortcuts for discovering relevant skills
 
 **What bundles are NOT:**
+
 - ❌ Separate installations or downloads
 - ❌ Different git commands
 - ❌ Something you need to "activate"
@@ -335,7 +343,7 @@ The repository is organized into specialized domains to transform your AI into a
 
 Counts change as new skills are added. For the current full registry, see [CATALOG.md](CATALOG.md).
 
-## Browse 883+ Skills
+## Browse 889+ Skills
 
 We have moved the full skill registry to a dedicated catalog to keep this README clean.
 
@@ -416,6 +424,7 @@ This collection would not be possible without the incredible work of the Claude 
 ### Community Contributors
 
 - **[rmyndharis/antigravity-skills](https://github.com/rmyndharis/antigravity-skills)**: For the massive contribution of 300+ Enterprise skills and the catalog generation logic.
+- **[amartelr/antigravity-workspace-manager](https://github.com/amartelr/antigravity-workspace-manager)**: Official Workspace Manager CLI companion to dynamically auto-provision subsets of skills across unlimited local development environments.
 
 - **[obra/superpowers](https://github.com/obra/superpowers)**: The original "Superpowers" by Jesse Vincent.
 - **[guanyang/antigravity-skills](https://github.com/guanyang/antigravity-skills)**: Core Antigravity extensions.
@@ -496,6 +505,10 @@ We officially thank the following contributors for their help in making this rep
 - [@Nguyen-Van-Chan](https://github.com/Nguyen-Van-Chan)
 - [@8hrsk](https://github.com/8hrsk)
 - [@Wittlesus](https://github.com/Wittlesus)
+- [@Vonfry](https://github.com/Vonfry)
+- [@ssumanbiswas](https://github.com/ssumanbiswas)
+- [@amartelr](https://github.com/amartelr)
+- [@fernandorych](https://github.com/fernandorych)
 
 ---
 

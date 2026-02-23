@@ -1,6 +1,6 @@
 ---
 name: multi-agent-brainstorming
-description: ">"
+description: 
   Use this skill when a design or idea requires higher confidence,
   risk reduction, or formal review. This skill orchestrates a
   structured, sequential multi-agent design review where each agent

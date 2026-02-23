@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-02-08T00:00:00.000Z",
-  "total": 883,
+  "total": 889,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -1055,7 +1055,7 @@
     {
       "id": "architect-review",
       "name": "architect-review",
-      "description": "Master software architect specializing in modern architecture",
+      "description": "Master software architect specializing in modern architecture patterns, clean architecture, microservices, event-driven systems, and DDD. Reviews system designs and code changes for architectural integrity, scalability, and maintainability. Use PROACTIVELY for architectural decisions.",
       "category": "architecture",
       "tags": [],
       "triggers": [
@@ -1063,7 +1063,14 @@
         "review",
         "software",
         "specializing",
-        "architecture"
+        "architecture",
+        "clean",
+        "microservices",
+        "event",
+        "driven",
+        "ddd",
+        "reviews",
+        "designs"
       ],
       "path": "skills/architect-review/SKILL.md"
     },
@@ -4768,7 +4775,7 @@
     {
       "id": "c-pro",
       "name": "c-pro",
-      "description": "Write efficient C code with proper memory management, pointer",
+      "description": "Write efficient C code with proper memory management, pointer arithmetic, and system calls. Handles embedded systems, kernel modules, and performance-critical code. Use PROACTIVELY for C optimization, memory issues, or system programming.",
       "category": "general",
       "tags": [
         "c"
@@ -4781,7 +4788,11 @@
         "code",
         "proper",
         "memory",
-        "pointer"
+        "pointer",
+        "arithmetic",
+        "calls",
+        "embedded",
+        "kernel"
       ],
       "path": "skills/c-pro/SKILL.md"
     },
@@ -5783,8 +5794,8 @@
     {
       "id": "code-reviewer",
       "name": "code-reviewer",
-      "description": "Elite code review expert specializing in modern AI-powered code",
-      "category": "data-ai",
+      "description": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.",
+      "category": "security",
       "tags": [
         "code"
       ],
@@ -5795,7 +5806,12 @@
         "review",
         "specializing",
         "ai",
-        "powered"
+        "powered",
+        "analysis",
+        "security",
+        "vulnerabilities",
+        "performance",
+        "optimization"
       ],
       "path": "skills/code-reviewer/SKILL.md"
     },
@@ -7669,11 +7685,22 @@
     {
       "id": "design-orchestration",
       "name": "design-orchestration",
-      "description": ">",
-      "category": "workflow",
+      "description": "Orchestrates design workflows by routing work through brainstorming, multi-agent review, and execution readiness in the correct order. Prevents premature implementation, skipped validation, and unreviewed high-risk designs.",
+      "category": "security",
       "tags": [],
       "triggers": [
-        "orchestration"
+        "orchestration",
+        "orchestrates",
+        "routing",
+        "work",
+        "through",
+        "brainstorming",
+        "multi",
+        "agent",
+        "review",
+        "execution",
+        "readiness",
+        "correct"
       ],
       "path": "skills/design-orchestration/SKILL.md"
     },
@@ -10536,8 +10563,8 @@
     {
       "id": "haskell-pro",
       "name": "haskell-pro",
-      "description": "Expert Haskell engineer specializing in advanced type systems, pure",
-      "category": "general",
+      "description": "Expert Haskell engineer specializing in advanced type systems, pure functional design, and high-reliability software. Use PROACTIVELY for type-level programming, concurrency, and architecture guidance.",
+      "category": "architecture",
       "tags": [
         "haskell"
       ],
@@ -10547,7 +10574,13 @@
         "engineer",
         "specializing",
         "type",
-        "pure"
+        "pure",
+        "functional",
+        "high",
+        "reliability",
+        "software",
+        "proactively",
+        "level"
       ],
       "path": "skills/haskell-pro/SKILL.md"
     },
@@ -13147,8 +13180,8 @@
     {
       "id": "multi-agent-brainstorming",
       "name": "multi-agent-brainstorming",
-      "description": ">",
-      "category": "general",
+      "description": "Use this skill when a design or idea requires higher confidence, risk reduction, or formal review. This skill orchestrates a structured, sequential multi-agent design review where each agent has a strict, non-overlapping role. It prevents blind spots, false confidence, and premature convergence.",
+      "category": "security",
       "tags": [
         "multi",
         "agent",
@@ -13157,7 +13190,16 @@
       "triggers": [
         "multi",
         "agent",
-        "brainstorming"
+        "brainstorming",
+        "skill",
+        "idea",
+        "requires",
+        "higher",
+        "confidence",
+        "risk",
+        "reduction",
+        "formal",
+        "review"
       ],
       "path": "skills/multi-agent-brainstorming/SKILL.md"
     },
@@ -13355,6 +13397,58 @@
         "database"
       ],
       "path": "skills/neon-postgres/SKILL.md"
+    },
+    {
+      "id": "nerdzao-elite",
+      "name": "nerdzao-elite",
+      "description": "Senior Elite Software Engineer (15+) and Senior Product Designer. Full workflow with planning, architecture, TDD, clean code, and pixel-perfect UX validation.",
+      "category": "architecture",
+      "tags": [
+        "nerdzao",
+        "elite"
+      ],
+      "triggers": [
+        "nerdzao",
+        "elite",
+        "senior",
+        "software",
+        "engineer",
+        "15",
+        "product",
+        "designer",
+        "full",
+        "planning",
+        "architecture",
+        "tdd"
+      ],
+      "path": "skills/nerdzao-elite/SKILL.md"
+    },
+    {
+      "id": "nerdzao-elite-gemini-high",
+      "name": "nerdzao-elite-gemini-high",
+      "description": "Modo Elite Coder + UX Pixel-Perfect otimizado especificamente para Gemini 3.1 Pro High. Workflow completo com foco em qualidade máxima e eficiência de tokens.",
+      "category": "workflow",
+      "tags": [
+        "nerdzao",
+        "elite",
+        "gemini",
+        "high"
+      ],
+      "triggers": [
+        "nerdzao",
+        "elite",
+        "gemini",
+        "high",
+        "modo",
+        "coder",
+        "ux",
+        "pixel",
+        "perfect",
+        "otimizado",
+        "especificamente",
+        "para"
+      ],
+      "path": "skills/nerdzao-elite-gemini-high/SKILL.md"
     },
     {
       "id": "nestjs-expert",
@@ -14257,7 +14351,7 @@
     {
       "id": "performance-engineer",
       "name": "performance-engineer",
-      "description": "Expert performance engineer specializing in modern observability,",
+      "description": "Expert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed tracing, load testing, multi-tier caching, Core Web Vitals, and performance monitoring. Handles end-to-end optimization, real user monitoring, and scalability patterns. Use PROACTIVELY for performance optimization, observability, or scalability challenges.",
       "category": "infrastructure",
       "tags": [
         "performance"
@@ -14266,7 +14360,15 @@
         "performance",
         "engineer",
         "specializing",
-        "observability"
+        "observability",
+        "application",
+        "optimization",
+        "scalable",
+        "masters",
+        "opentelemetry",
+        "distributed",
+        "tracing",
+        "load"
       ],
       "path": "skills/performance-engineer/SKILL.md"
     },
@@ -16199,7 +16301,7 @@
     {
       "id": "search-specialist",
       "name": "search-specialist",
-      "description": "Expert web researcher using advanced search techniques and",
+      "description": "Expert web researcher using advanced search techniques and synthesis. Masters search operators, result filtering, and multi-source verification. Handles competitive analysis and fact-checking. Use PROACTIVELY for deep research, information gathering, or trend analysis.",
       "category": "general",
       "tags": [
         "search"
@@ -16208,7 +16310,15 @@
         "search",
         "web",
         "researcher",
-        "techniques"
+        "techniques",
+        "synthesis",
+        "masters",
+        "operators",
+        "result",
+        "filtering",
+        "multi",
+        "source",
+        "verification"
       ],
       "path": "skills/search-specialist/SKILL.md"
     },
@@ -16397,6 +16507,119 @@
         "vulnerability"
       ],
       "path": "skills/security-scanning-security-sast/SKILL.md"
+    },
+    {
+      "id": "security/aws-compliance-checker",
+      "name": "aws-compliance-checker",
+      "description": "Automated compliance checking against CIS, PCI-DSS, HIPAA, and SOC 2 benchmarks",
+      "category": "security",
+      "tags": [
+        "aws",
+        "compliance",
+        "audit",
+        "cis",
+        "pci-dss",
+        "hipaa",
+        "kiro-cli"
+      ],
+      "triggers": [
+        "aws",
+        "compliance",
+        "audit",
+        "cis",
+        "pci-dss",
+        "hipaa",
+        "kiro-cli",
+        "checker",
+        "automated",
+        "checking",
+        "against",
+        "pci"
+      ],
+      "path": "skills/security/aws-compliance-checker/SKILL.md"
+    },
+    {
+      "id": "security/aws-iam-best-practices",
+      "name": "aws-iam-best-practices",
+      "description": "IAM policy review, hardening, and least privilege implementation",
+      "category": "security",
+      "tags": [
+        "aws",
+        "iam",
+        "security",
+        "access-control",
+        "kiro-cli",
+        "least-privilege"
+      ],
+      "triggers": [
+        "aws",
+        "iam",
+        "security",
+        "access-control",
+        "kiro-cli",
+        "least-privilege",
+        "policy",
+        "review",
+        "hardening",
+        "least",
+        "privilege"
+      ],
+      "path": "skills/security/aws-iam-best-practices/SKILL.md"
+    },
+    {
+      "id": "security/aws-secrets-rotation",
+      "name": "aws-secrets-rotation",
+      "description": "Automate AWS secrets rotation for RDS, API keys, and credentials",
+      "category": "security",
+      "tags": [
+        "aws",
+        "secrets-manager",
+        "security",
+        "automation",
+        "kiro-cli",
+        "credentials"
+      ],
+      "triggers": [
+        "aws",
+        "secrets-manager",
+        "security",
+        "automation",
+        "kiro-cli",
+        "credentials",
+        "secrets",
+        "rotation",
+        "automate",
+        "rds",
+        "api",
+        "keys"
+      ],
+      "path": "skills/security/aws-secrets-rotation/SKILL.md"
+    },
+    {
+      "id": "security/aws-security-audit",
+      "name": "aws-security-audit",
+      "description": "Comprehensive AWS security posture assessment using AWS CLI and security best practices",
+      "category": "security",
+      "tags": [
+        "aws",
+        "security",
+        "audit",
+        "compliance",
+        "kiro-cli",
+        "security-assessment"
+      ],
+      "triggers": [
+        "aws",
+        "security",
+        "audit",
+        "compliance",
+        "kiro-cli",
+        "security-assessment",
+        "posture",
+        "assessment",
+        "cli"
+      ],
+      "path": "skills/security/aws-security-audit/SKILL.md"
     },
     {
       "id": "segment-automation",
