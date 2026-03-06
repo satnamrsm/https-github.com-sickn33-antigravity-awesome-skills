@@ -1,7 +1,7 @@
-<!-- registry-sync: version=7.0.1; skills=1207; stars=20954; updated_at=2026-03-06T19:37:52+00:00 -->
-# 🌌 Antigravity Awesome Skills: 1,207+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
+<!-- registry-sync: version=7.0.1; skills=1206; stars=20847; updated_at=2026-03-06T15:02:32+00:00 -->
+# 🌌 Antigravity Awesome Skills: 1,206+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
 
-> **The Ultimate Collection of 1,207+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
+> **The Ultimate Collection of 1,206+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
 
 [![GitHub stars](https://img.shields.io/badge/⭐%2021%2C000%2B%20Stars-gold?style=for-the-badge)](https://github.com/sickn33/antigravity-awesome-skills/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -18,7 +18,7 @@
 [![Web App](https://img.shields.io/badge/Web%20App-Browse%20Skills-blue)](apps/web-app)
 [![Buy Me a Book](https://img.shields.io/badge/Buy%20me%20a-book-d13610?logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/sickn33)
 
-**Antigravity Awesome Skills** is a curated, battle-tested library of **1,207+ high-performance agentic skills** designed to work seamlessly across the major AI coding assistants.
+**Antigravity Awesome Skills** is a curated, battle-tested library of **1,206+ high-performance agentic skills** designed to work seamlessly across the major AI coding assistants.
 
 **Welcome to the V7.0.1 21k Stars Patch Release!** This repository gives your agent reusable playbooks for planning, coding, debugging, testing, security review, infrastructure work, product thinking, and much more.
 
@@ -130,7 +130,7 @@ Use @security-auditor to review this API endpoint for auth and validation risks.
 Use @doc-coauthoring to rewrite our setup guide for first-time contributors.
 ```
 
-## Browse 1,207+ Skills
+## Browse 1,206+ Skills
 
 - Open the interactive browser in [`apps/web-app`](apps/web-app).
 - Read the full catalog in [`CATALOG.md`](CATALOG.md).
