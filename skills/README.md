@@ -170,10 +170,10 @@ description: "What this skill does"
 
 ## Documentation
 
-- **[Getting Started](../docs/GETTING_STARTED.md)** - Quick start guide
-- **[Examples](../docs/EXAMPLES.md)** - Real-world usage examples
-- **[FAQ](../docs/FAQ.md)** - Common questions
-- **[Visual Guide](../docs/VISUAL_GUIDE.md)** - Diagrams and flowcharts
+- **[Getting Started](../docs/users/getting-started.md)** - Quick start guide
+- **[Examples](../docs/contributors/examples.md)** - Real-world usage examples
+- **[FAQ](../docs/users/faq.md)** - Common questions
+- **[Visual Guide](../docs/users/visual-guide.md)** - Diagrams and flowcharts
 
 ---
 

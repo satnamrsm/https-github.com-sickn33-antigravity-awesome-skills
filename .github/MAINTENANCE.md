@@ -28,7 +28,7 @@ If you touch **any of these**:
 
 - `skills/` (add/remove/modify skills)
 - the **Full Skill Registry** section of `README.md`
-- **counts/claims** about the number of skills (`560+ Agentic Skills...`, `(560/560)`, etc.)
+- **counts/claims** about the number of skills (`1,200+ Agentic Skills...`, `(1,200+/1,200+)`, etc.)
 
 …then you **MUST** run the Validation Chain **BEFORE** committing.
 
@@ -80,13 +80,13 @@ Before ANY commit that adds/modifies skills, run the chain:
     git commit -m "chore: sync generated files"
     ```
     > 🔴 **CRITICAL**: If you skip this, CI will fail with "Detected uncommitted changes".
-    > See [docs/CI_DRIFT_FIX.md](../docs/CI_DRIFT_FIX.md) for details.
+    > See [`docs/maintainers/ci-drift-fix.md`](../docs/maintainers/ci-drift-fix.md) for details.
 
 ### B. When You Merge a PR (Step-by-Step)
 
 **Before merging:**
 
-1.  **CI is green** — All Validation Chain and catalog steps passed (see [workflows/ci.yml](workflows/ci.yml)).
+1.  **CI is green** — Validation, reference checks, tests, and generated artifact steps passed (see [`.github/workflows/ci.yml`](workflows/ci.yml)).
 2.  **No drift** — PR does not introduce uncommitted generated-file changes; if the "Check for Uncommitted Drift" step failed, ask the author to run `npm run chain` and `npm run catalog` and commit the result.
 3.  **Quality Bar** — PR description confirms the [Quality Bar Checklist](.github/PULL_REQUEST_TEMPLATE.md) (metadata, risk label, credits if applicable).
 4.  **Issue link** — If the PR fixes an issue, the PR description should contain `Closes #N` or `Fixes #N` so GitHub auto-closes the issue on merge.
@@ -134,21 +134,21 @@ GitHub's anchor generation breaks if headers have emojis.
 If you update installation instructions or tool compatibility, you MUST update all 3 files:
 
 1.  `README.md` (Source of Truth)
-2.  `docs/GETTING_STARTED.md` (Beginner Guide)
-3.  `docs/FAQ.md` (Troubleshooting)
+2.  `docs/users/getting-started.md` (Beginner Guide)
+3.  `docs/users/faq.md` (Troubleshooting)
 
 _Common pitfall: Updating the clone URL in README but leaving an old one in FAQ._
 
 ### C. Statistics Consistency (CRITICAL)
 
-If you add/remove skills, you **MUST** ensure the total count is identical in ALL locations.
-**Do not allow drift** (e.g., 560 in title, 558 in header).
+If you add/remove skills, you **MUST** ensure generated counts and user-facing claims stay aligned.
 
 Locations to check:
 
-1.  **Title of `README.md`**: "560+ Agentic Skills..."
-2.  **`## Full Skill Registry (560/560)` header**.
-3.  **`docs/GETTING_STARTED.md` intro**.
+1.  `README.md`
+2.  `package.json` description
+3.  `skills_index.json` and generated catalog artifacts
+4.  Any user docs that deliberately hardcode counts
 
 ### D. Credits Policy (Who goes where?)
 
@@ -166,7 +166,7 @@ Locations to check:
 
 If you touch any Workflows-related artifact, keep all workflow surfaces in sync:
 
-1. `docs/WORKFLOWS.md` (human-readable playbooks)
+1. `docs/users/workflows.md` (human-readable playbooks)
 2. `data/workflows.json` (machine-readable schema)
 3. `skills/antigravity-workflows/SKILL.md` (orchestration entrypoint)
 
@@ -177,8 +177,8 @@ Rules:
 - If a workflow references optional skills not yet merged (example: `go-playwright`), mark them explicitly as **optional** in docs.
 - If workflow onboarding text is changed, update the docs trinity:
   - `README.md`
-  - `docs/GETTING_STARTED.md`
-  - `docs/FAQ.md`
+  - `docs/users/getting-started.md`
+  - `docs/users/faq.md`
 
 ---
 
@@ -192,7 +192,7 @@ Reject any PR that fails this:
 2.  **Safety**: `risk: offensive` used for red-team tools?
 3.  **Clarity**: Does it say _when_ to use it?
 4.  **Examples**: Copy-pasteable code blocks?
-5.  **Actions**: "Run this command" vs "Think about this".
+5.  **Limitations / Safety Notes**: Edge cases and risk boundaries are stated clearly.
 
 ### B. Risk Labels (V4)
 
@@ -204,14 +204,25 @@ Reject any PR that fails this:
 
 ## 4. 🚀 Release Workflow
 
-When cutting a new version (e.g., v4.1.0):
+When cutting a new version, follow the maintainer playbook in [`docs/maintainers/release-process.md`](../docs/maintainers/release-process.md).
 
 **Release checklist (order matters):**  
-Validate → Changelog → Bump `package.json` (and README if needed) → Commit & push → Create GitHub Release with tag **matching** `package.json` (e.g. `v4.1.0` ↔ `"version": "4.1.0"`) → npm publish (manual or via CI) → Close any remaining linked issues.
+Operational verification → Changelog → Bump `package.json` (and README if needed) → Commit & push → Create GitHub Release with tag matching `package.json` → npm publish (manual or via CI) → Close remaining linked issues.
 
 ---
 
-1.  **Run Full Validation**: `python3 scripts/validate_skills.py --strict`
+1.  **Run release verification**:
+    ```bash
+    npm run validate
+    npm run validate:references
+    npm run sync:all
+    npm run test
+    npm run app:build
+    ```
+    Optional diagnostic pass:
+    ```bash
+    npm run validate:strict
+    ```
 2.  **Update Changelog**: Add the new release section to `CHANGELOG.md`.
 3.  **Bump Version**:
     - Update `package.json` → `"version": "X.Y.Z"` (source of truth for npm).
@@ -224,12 +235,12 @@ Validate → Changelog → Bump `package.json` (and README if needed) → Commit
     Use the GitHub CLI:
 
     ```bash
-    # Prepare release notes (copy the new section from CHANGELOG.md into release_notes.md, or use CHANGELOG excerpt)
+    # Prepare release notes (copy the new section from CHANGELOG.md into docs/maintainers/release-process.md, or use CHANGELOG excerpt)
     # Then create the tag AND the release page (tag must match package.json version, e.g. v4.1.0)
-    gh release create v4.0.0 --title "v4.0.0 - [Theme Name]" --notes-file release_notes.md
+    gh release create v4.0.0 --title "v4.0.0 - [Theme Name]" --notes-file docs/maintainers/release-process.md
     ```
 
-    **Important:** The release tag (e.g. `v4.1.0`) must match `package.json`'s `"version": "4.1.0"`. The [Publish to npm](workflows/publish-npm.yml) workflow runs on **Release published** and will run `npm publish`; npm rejects republishing the same version.
+    **Important:** The release tag must match `package.json`'s version. The [Publish to npm](workflows/publish-npm.yml) workflow runs on **Release published** and will run `npm publish`; npm rejects republishing the same version.
 
     _Or create the release manually via GitHub UI > Releases > Draft a new release, then publish._
 
@@ -250,11 +261,11 @@ Validate → Changelog → Bump `package.json` (and README if needed) → Commit
 
 ### When to Close an Issue
 
-| Situation | Action |
-|-----------|--------|
-| PR merges and PR body contains `Closes #N` or `Fixes #N` | GitHub closes the issue automatically. |
-| PR merges but did not reference the issue | After merge, close manually: `gh issue close N --comment "Fixed in #<PR>. Shipped in vX.Y.Z."` |
-| Fix/feature shipped in a release, no PR referenced | Close with: `gh issue close N --comment "Shipped in vX.Y.Z. See CHANGELOG."` |
+| Situation                                                | Action                                                                                         |
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| PR merges and PR body contains `Closes #N` or `Fixes #N` | GitHub closes the issue automatically.                                                         |
+| PR merges but did not reference the issue                | After merge, close manually: `gh issue close N --comment "Fixed in #<PR>. Shipped in vX.Y.Z."` |
+| Fix/feature shipped in a release, no PR referenced       | Close with: `gh issue close N --comment "Shipped in vX.Y.Z. See CHANGELOG."`                   |
 
 ### 📋 Changelog Entry Template
 
