@@ -2,7 +2,7 @@
 
 Generated at: 2026-02-08T00:00:00.000Z
 
-Total skills: 1206
+Total skills: 1207
 
 ## architecture (78)
 
@@ -156,7 +156,7 @@ calculations | startup, business, analyst, market, opportunity | startup, busine
 | `startup-financial-modeling` | This skill should be used when the user asks to \\\"create financial projections", "build a financial model", "forecast revenue", "calculate burn rate", "est... | startup, financial, modeling | startup, financial, modeling, skill, should, used, user, asks, projections, model, forecast, revenue |
 | `whatsapp-automation` | Automate WhatsApp Business tasks via Rube MCP (Composio): send messages, manage templates, upload media, and handle contacts. Always search tools first for c... | whatsapp | whatsapp, automation, automate, business, tasks, via, rube, mcp, composio, send, messages, upload |
 
-## data-ai (213)
+## data-ai (214)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -364,6 +364,7 @@ Scope::with_data, save state, load state, serde,
 | `sqlmap-database-pentesting` | This skill should be used when the user asks to "automate SQL injection testing," "enumerate database structure," "extract database credentials using sqlmap,... | sqlmap, database, pentesting | sqlmap, database, pentesting, skill, should, used, user, asks, automate, sql, injection, testing |
 | `stitch-ui-design` | Expert guide for creating effective prompts for Google Stitch AI UI design tool. Use when user wants to design UI/UX in Stitch, create app interfaces, genera... | stitch, ui | stitch, ui, creating, effective, prompts, google, ai, user, wants, ux, app, interfaces |
 | `supabase-automation` | Automate Supabase database queries, table management, project administration, storage, edge functions, and SQL execution via Rube MCP (Composio). Always sear... | supabase | supabase, automation, automate, database, queries, table, administration, storage, edge, functions, sql, execution |
+| `tanstack-query-expert` | Expert in TanStack Query (React Query) — asynchronous state management. Covers data fetching, stale time configuration, mutations, optimistic updates, and Ne... | tanstack, query | tanstack, query, react, asynchronous, state, covers, data, fetching, stale, time, configuration, mutations |
 | `team-collaboration-standup-notes` | You are an expert team communication specialist focused on async-first standup practices, AI-assisted note generation from commit history, and effective remo... | team, collaboration, standup, notes | team, collaboration, standup, notes, communication, async, first, ai, assisted, note, generation, commit |
 | `telegram-bot-builder` | Expert in building Telegram bots that solve real problems - from simple automation to complex AI-powered bots. Covers bot architecture, the Telegram Bot API,... | telegram, bot, builder | telegram, bot, builder, building, bots, solve, real, problems, simple, automation, complex, ai |
 | `travel-health-analyzer` | 分析旅行健康数据、评估目的地健康风险、提供疫苗接种建议、生成多语言紧急医疗信息卡片。支持WHO/CDC数据集成的专业级旅行健康风险评估。 | travel, health, analyzer | travel, health, analyzer, who, cdc |

@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-02-08T00:00:00.000Z",
-  "total": 1206,
+  "total": 1207,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -25907,6 +25907,31 @@
         "architecture"
       ],
       "path": "skills/tailwind-patterns/SKILL.md"
+    },
+    {
+      "id": "tanstack-query-expert",
+      "name": "tanstack-query-expert",
+      "description": "Expert in TanStack Query (React Query) — asynchronous state management. Covers data fetching, stale time configuration, mutations, optimistic updates, and Next.js App Router (SSR) integration.",
+      "category": "data-ai",
+      "tags": [
+        "tanstack",
+        "query"
+      ],
+      "triggers": [
+        "tanstack",
+        "query",
+        "react",
+        "asynchronous",
+        "state",
+        "covers",
+        "data",
+        "fetching",
+        "stale",
+        "time",
+        "configuration",
+        "mutations"
+      ],
+      "path": "skills/tanstack-query-expert/SKILL.md"
     },
     {
       "id": "tavily-web",
