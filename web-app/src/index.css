@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
-@import 'github-markdown-css/github-markdown-light.css';
+@import 'github-markdown-css/github-markdown.css';
+@import 'highlight.js/styles/github.css';
 
 @media (prefers-color-scheme: dark) {
-  @import 'github-markdown-css/github-markdown-dark.css';
+  .markdown-body {
+    color-scheme: dark;
+  }
 }
 
 :root {
