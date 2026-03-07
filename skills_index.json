@@ -10280,6 +10280,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "senior-frontend",
+    "path": "skills/senior-frontend",
+    "category": "uncategorized",
+    "name": "senior-frontend",
+    "description": "Frontend development skill for React, Next.js, TypeScript, and Tailwind CSS applications. Use when building React components, optimizing Next.js performance, analyzing bundle sizes, scaffolding frontend projects, implementing accessibility, or reviewing frontend code quality.",
+    "risk": "safe",
+    "source": "https://github.com/alirezarezvani/claude-skills",
+    "date_added": "2026-03-07"
+  },
+  {
     "id": "senior-fullstack",
     "path": "skills/senior-fullstack",
     "category": "uncategorized",
@@ -10468,6 +10478,16 @@
     "risk": "unknown",
     "source": "unknown",
     "date_added": null
+  },
+  {
+    "id": "shadcn",
+    "path": "skills/shadcn",
+    "category": "uncategorized",
+    "name": "shadcn",
+    "description": "Manages shadcn/ui components and projects, providing context, documentation, and usage patterns for building modern design systems.",
+    "risk": "safe",
+    "source": "https://github.com/shadcn-ui/ui/tree/main/skills/shadcn",
+    "date_added": "2026-03-07"
   },
   {
     "id": "shader-programming-glsl",
