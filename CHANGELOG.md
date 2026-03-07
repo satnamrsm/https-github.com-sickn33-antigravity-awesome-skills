@@ -11,6 +11,80 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [7.1.0] - 2026-03-07 - "PR Harvest & README Integrity"
+
+> **7 new skills merged from the community, README structure restored, and 1,272 skills milestone confirmed.**
+
+This release integrates a fresh batch of community pull requests: a Figma-to-React converter, Stripe payment expert, TanStack Query expert, Vercel AI SDK expert, Uncle Bob Clean Architecture guide, Antigravity premium design skills, and an AI agent toolkit. It also restores the structural integrity of README.md, which had picked up nested conflict markers from the batch-merge process.
+
+## 🚀 New Skills
+
+### 🎨 [figma-to-react](skills/figma-to-react/)
+
+**Convert Figma designs to production-ready React components.**
+Automatic conversion with pixel-perfect fidelity, responsive layouts, and Tailwind/CSS Modules support.
+
+> **Try it:** `Use @figma-to-react to turn this Figma component into a React component.`
+
+### 💳 [stripe-expert](skills/stripe-expert/)
+
+**Production-grade Stripe integration guidance.**
+Covers one-time payments, subscriptions, webhooks, and tax/compliance patterns.
+
+> **Try it:** `Use @stripe-expert to implement a SaaS subscription with annual billing.`
+
+### ⚡ [tanstack-query-expert](skills/tanstack-query-expert/)
+
+**Advanced data fetching and server state with TanStack Query v5.**
+Optimistic updates, infinite queries, and SSR/Next.js integration.
+
+> **Try it:** `Use @tanstack-query-expert to refactor this fetch call with caching and optimistic updates.`
+
+### 🤖 [vercel-ai-sdk-expert](skills/vercel-ai-sdk-expert/)
+
+**Generative UI and tool calling with the Vercel AI SDK.**
+Streaming, multi-step tools, and edge deployment patterns.
+
+> **Try it:** `Use @vercel-ai-sdk-expert to add streaming chat with tool calls.`
+
+### 📐 [uncle-bob-craft](skills/uncle-bob-craft/)
+
+**Clean Code, Clean Architecture, and TDD guidance from Uncle Bob's books.**
+Code reviews, refactoring, SOLID principles, and design pattern references.
+
+> **Try it:** `Use @uncle-bob-craft to review this class for SRP violations.`
+
+### ✨ [antigravity-premium-design](skills/antigravity-premium-design/)
+
+**Premium UI/UX patterns and motion design for Antigravity IDE.**
+
+> **Try it:** `Use @antigravity-premium-design to redesign this component.`
+
+## 📦 Improvements
+
+- **Registry Update**: Now tracking **1,272** skills.
+- **README Integrity**: Removed all nested merge conflict markers introduced during the batch-merge phase; restored original section layout.
+- **Stats Sync**: `package.json` description updated to `1,272+`.
+
+## 👥 Credits
+
+A huge shoutout to our community contributors:
+
+- **@GuppyTheCat** for `obsidian-clipper-template-creator` (PR #226)
+- **@sraphaz** for `uncle-bob-craft` (PR #225)
+- **@ziuus** for `antigravity-premium-design` (PR #224)
+- **@sx4im** for `git-hooks-automation` (PR #223), `tanstack-query-expert` (PR #222), `vercel-ai-sdk-expert` (PR #220)
+- **@Sayeem3051** for skill filtering utility (PR #219)
+- **@AlmogBaku** for `debug-skill` (PR #218)
+- **@ProgramadorBrasil** for 52 specialized AI agent skills (PR #217)
+- **@shubhamdevx** for web app markdown rendering improvements (PR #213)
+
+---
+
+_Upgrade now: `git pull origin main` to fetch the latest skills._
+
+---
+
 ## [7.0.1] - 2026-03-06 - "Markdown & Wallet Patch"
 
 > **Patch release with web markdown improvements and new wallet skills, plus catalog sync.**
@@ -57,7 +131,9 @@ Thank you to our incredible community! From 0 to 20,000 stars, this journey has 
 ## 🚀 New Skill Categories (300+ Skills)
 
 ### UI/UX & Frontend (35+ skills)
+
 Complete UI/UX polish toolkit and 3D graphics suite:
+
 - **[baseline-ui](skills/baseline-ui/)**, **[fixing-accessibility](skills/fixing-accessibility/)**, **[fixing-metadata](skills/fixing-metadata/)**, **[fixing-motion-performance](skills/fixing-motion-performance/)** - UI validation and accessibility
 - **[swiftui-expert-skill](skills/swiftui-expert-skill/)** - iOS SwiftUI development with 14 reference guides
 - **[threejs-fundamentals](skills/threejs-fundamentals/)** through **[threejs-interaction](skills/threejs-interaction/)** - Complete Three.js 3D graphics (10 skills)
@@ -67,7 +143,9 @@ Complete UI/UX polish toolkit and 3D graphics suite:
 - **[favicon](skills/favicon/)**, **[chat-widget](skills/chat-widget/)** - UI utilities
 
 ### Automation & Integration (35+ skills)
+
 Full workflow automation toolkit:
+
 - **[gmail-automation](skills/gmail-automation/)**, **[google-calendar-automation](skills/google-calendar-automation/)**, **[google-docs-automation](skills/google-docs-automation/)**, **[google-sheets-automation](skills/google-sheets-automation/)**, **[google-drive-automation](skills/google-drive-automation/)**, **[google-slides-automation](skills/google-slides-automation/)** - Complete Google Workspace integration
 - **[n8n-expression-syntax](skills/n8n-expression-syntax/)**, **[n8n-mcp-tools-expert](skills/n8n-mcp-tools-expert/)**, **[n8n-workflow-patterns](skills/n8n-workflow-patterns/)**, **[n8n-validation-expert](skills/n8n-validation-expert/)**, **[n8n-node-configuration](skills/n8n-node-configuration/)**, **[n8n-code-javascript](skills/n8n-code-javascript/)**, **[n8n-code-python](skills/n8n-code-python/)** - n8n workflow automation (7 skills)
 - **[automate-whatsapp](skills/automate-whatsapp/)**, **[integrate-whatsapp](skills/integrate-whatsapp/)**, **[observe-whatsapp](skills/observe-whatsapp/)** - WhatsApp automation
@@ -77,7 +155,9 @@ Full workflow automation toolkit:
 - **[build](skills/build/)**, **[conductor-setup](skills/conductor-setup/)**, **[issues](skills/issues/)**, **[new-rails-project](skills/new-rails-project/)** - Development project management
 
 ### Security & Auditing (40+ skills)
+
 Comprehensive security toolkit from Trail of Bits and community:
+
 - **[semgrep-rule-creator](skills/semgrep-rule-creator/)**, **[semgrep-rule-variant-creator](skills/semgrep-rule-variant-creator/)**, **[static-analysis](skills/static-analysis/)**, **[variant-analysis](skills/variant-analysis/)** - Code security analysis
 - **[golang-security-auditor](skills/golang-security-auditor/)**, **[python-security-auditor](skills/python-security-auditor/)**, **[rust-security-auditor](skills/rust-security-auditor/)** - Language-specific security auditing
 - **[burpsuite-project-parser](skills/burpsuite-project-parser/)**, **[agentic-actions-auditor](skills/agentic-actions-auditor/)**, **[audit-context-building](skills/audit-context-building/)**, **[proof-of-vulnerability](skills/proof-of-vulnerability/)**, **[yara-authoring](skills/yara-authoring/)** - Security testing tools
@@ -86,7 +166,9 @@ Comprehensive security toolkit from Trail of Bits and community:
 - **[ask-questions-if-underspecified](skills/ask-questions-if-underspecified/)**, **[building-secure-contracts](skills/building-secure-contracts/)**, **[claude-in-chrome-troubleshooting](skills/claude-in-chrome-troubleshooting/)**, **[constant-time-analysis](skills/constant-time-analysis/)**, **[culture-index](skills/culture-index/)**, **[debug-buttercup](skills/debug-buttercup/)**, **[devcontainer-setup](skills/devcontainer-setup/)**, **[differential-review](skills/differential-review/)**, **[dwarf-expert](skills/dwarf-expert/)**, **[grimoire](skills/grimoire/)**, **[it-depends](skills/it-depends/)**, **[monte-carlo-treasury](skills/monte-carlo-treasury/)**, **[monte-carlo-vulnerability-detection](skills/monte-carlo-vulnerability-detection/)**, **[open-source-context](skills/open-source-context/)**, **[operational-guidelines](skills/operational-guidelines/)**, **[osint-evals](skills/osint-evals/)**, **[polyfile](skills/polyfile/)**, **[publish-and-summary](skills/publish-and-summary/)**, **[security-skill-creator](skills/security-skill-creator/)**, **[sharp-edges](skills/sharp-edges/)**, **[skill-improver](skills/skill-improver/)**, **[spec-to-code-compliance](skills/spec-to-code-compliance/)**, **[supply-chain-risk-auditor](skills/supply-chain-risk-auditor/)**, **[testing-handbook-skills](skills/testing-handbook-skills/)**, **[workflow-skill-design](skills/workflow-skill-design/)**, **[zeroize-audit](skills/zeroize-audit/)** - Additional Trail of Bits security skills
 
 ### Machine Learning & Data Science (35+ skills)
+
 Complete scientific computing suite:
+
 - **[hugging-face-dataset-viewer](skills/hugging-face-dataset-viewer/)**, **[hugging-face-datasets](skills/hugging-face-datasets/)**, **[hugging-face-evaluation](skills/hugging-face-evaluation/)**, **[hugging-face-model-trainer](skills/hugging-face-model-trainer/)**, **[hugging-face-paper-publisher](skills/hugging-face-paper-publisher/)**, **[hugging-face-tool-builder](skills/hugging-face-tool-builder/)** - HuggingFace ML platform
 - **[numpy](skills/numpy/)**, **[pandas](skills/pandas/)**, **[scipy](skills/scipy/)**, **[matplotlib](skills/matplotlib/)**, **[scikit-learn](skills/scikit-learn/)**, **[jupyter-workflow](skills/jupyter-workflow/)** - Data science essentials
 - **[biopython](skills/biopython/)**, **[scanpy](skills/scanpy/)**, **[uniprot-database](skills/uniprot-database/)**, **[pubmed-database](skills/pubmed-database/)** - Bioinformatics tools
@@ -96,26 +178,35 @@ Complete scientific computing suite:
 - **[research-engineer](skills/research-engineer/)**, **[scientific-writing](skills/scientific-writing/)**, **[paper-analysis](skills/paper-analysis/)** - Academic research
 
 ### Health & Wellness (20+ skills)
+
 Comprehensive health management from Claude-Ally-Health:
+
 - **[sleep-analyzer](skills/sleep-analyzer/)**, **[nutrition-analyzer](skills/nutrition-analyzer/)**, **[fitness-analyzer](skills/fitness-analyzer/)** - Core health tracking
 - **[ai-analyzer](skills/ai-analyzer/)**, **[emergency-card](skills/emergency-card/)**, **[family-health-analyzer](skills/family-health-analyzer/)**, **[food-database-query](skills/food-database-query/)**, **[goal-analyzer](skills/goal-analyzer/)**, **[health-trend-analyzer](skills/health-trend-analyzer/)**, **[mental-health-analyzer](skills/mental-health-analyzer/)**, **[occupational-health-analyzer](skills/occupational-health-analyzer/)**, **[oral-health-analyzer](skills/oral-health-analyzer/)**, **[rehabilitation-analyzer](skills/rehabilitation-analyzer/)**, **[sexual-health-analyzer](skills/sexual-health-analyzer/)**, **[skin-health-analyzer](skills/skin-health-analyzer/)**, **[tcm-constitution-analyzer](skills/tcm-constitution-analyzer/)**, **[travel-health-analyzer](skills/travel-health-analyzer/)**, **[weightloss-analyzer](skills/weightloss-analyzer/)**, **[wellally-tech](skills/wellally-tech/)** - Specialized health analyzers
 
 ### Context Engineering & AI (15+ skills)
+
 Advanced agent patterns from muratcankoylan and community:
+
 - **[context-fundamentals](skills/context-fundamentals/)**, **[context-degradation](skills/context-degradation/)**, **[context-compression](skills/context-compression/)**, **[context-optimization](skills/context-optimization/)**, **[multi-agent-patterns](skills/multi-agent-patterns/)**, **[filesystem-context](skills/filesystem-context/)** - Context engineering patterns
 - **[hosted-agents](skills/hosted-agents/)**, **[advanced-evaluation](skills/advanced-evaluation/)**, **[project-development](skills/project-development/)**, **[bdi-mental-states](skills/bdi-mental-states/)** - Advanced agent patterns
 - **[agents-md](skills/agents-md/)**, **[blog-writing-guide](skills/blog-writing-guide/)**, **[brand-guidelines](skills/brand-guidelines/)**, **[claude-settings-audit](skills/claude-settings-audit/)** - Sentry workflow skills
 
 ### Functional Programming (12+ skills)
+
 Complete fp-ts guide:
+
 - **[fp-pragmatic](skills/fp-pragmatic/)**, **[fp-errors](skills/fp-errors/)**, **[fp-async](skills/fp-async/)**, **[fp-react](skills/fp-react/)**, **[fp-data-transforms](skills/fp-data-transforms/)**, **[fp-backend](skills/fp-backend/)**, **[fp-refactor](skills/fp-refactor/)** - Core functional programming
 - **[fp-types-ref](skills/fp-types-ref/)**, **[fp-pipe-ref](skills/fp-pipe-ref/)**, **[fp-option-ref](skills/fp-option-ref/)**, **[fp-either-ref](skills/fp-either-ref/)**, **[fp-taskeither-ref](skills/fp-taskeither-ref/)** - Quick reference guides
 
 ### AWS Development (6+ skills)
+
 AWS expertise from zxkane:
+
 - **[aws-agentic-ai](skills/aws-agentic-ai/)**, **[aws-cdk-development](skills/aws-cdk-development/)**, **[aws-common](skills/aws-common/)**, **[aws-cost-ops](skills/aws-cost-ops/)**, **[aws-mcp-setup](skills/aws-mcp-setup/)**, **[aws-serverless-eda](skills/aws-serverless-eda/)**
 
 ### Utilities & Developer Tools (10+ skills)
+
 - **[vexor-cli](skills/vexor-cli/)** - Semantic file discovery
 - **[clarity-gate](skills/clarity-gate/)** - RAG quality verification
 - **[speckit-updater](skills/speckit-updater/)** - SpecKit template updates
@@ -137,6 +228,7 @@ AWS expertise from zxkane:
 ## 👥 Credits
 
 ### Official Team Contributions
+
 - **Vercel Labs**: `vercel-deploy-claimable`
 - **Google Labs**: `enhance-prompt`, `remotion`, `stitch-loop`
 - **HuggingFace**: `hugging-face-dataset-viewer`, `hugging-face-datasets`, `hugging-face-evaluation`, `hugging-face-model-trainer`, `hugging-face-paper-publisher`, `hugging-face-tool-builder`
@@ -145,6 +237,7 @@ AWS expertise from zxkane:
 - **Trail of Bits**: 40+ security skills including `semgrep-rule-creator`, `static-analysis`, `variant-analysis`, and specialized auditors
 
 ### Community Contributors
+
 - **[ibelick](https://github.com/ibelick/ui-skills)**: UI/UX polish skills
 - **[expo](https://github.com/expo/skills)**: React Native development skills
 - **[sanjay3290](https://github.com/sanjay3290/ai-skills)**: Google Workspace integration
@@ -171,6 +264,7 @@ AWS expertise from zxkane:
 - **[neondatabase](https://github.com/neondatabase/agent-skills)**: Neon Postgres
 
 ### Top Repository Contributors
+
 - [@sck_0](https://github.com/sck_0) - 377 commits
 - [@github-actions[bot]](https://github.com/apps/github-actions) - 145 commits
 - [@sickn33](https://github.com/sickn33) - 54 commits

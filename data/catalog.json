@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-02-08T00:00:00.000Z",
-  "total": 1271,
+  "total": 1272,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -28819,6 +28819,35 @@
         "umap"
       ],
       "path": "skills/umap/SKILL.md"
+    },
+    {
+      "id": "uncle-bob-craft",
+      "name": "uncle-bob-craft",
+      "description": "Use when performing code review, writing or refactoring code, or discussing architecture; complements clean-code and does not replace project linter/formatter.",
+      "category": "architecture",
+      "tags": [
+        "clean-code",
+        "clean-architecture",
+        "solid",
+        "code-review",
+        "craftsmanship",
+        "uncle-bob"
+      ],
+      "triggers": [
+        "clean-code",
+        "clean-architecture",
+        "solid",
+        "code-review",
+        "craftsmanship",
+        "uncle-bob",
+        "uncle",
+        "bob",
+        "craft",
+        "performing",
+        "code",
+        "review"
+      ],
+      "path": "skills/uncle-bob-craft/SKILL.md"
     },
     {
       "id": "uniprot-database",

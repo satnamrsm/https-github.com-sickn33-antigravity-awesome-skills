@@ -141,7 +141,7 @@ See the [main README](../README.md) for the complete list of all 179+ skills org
 
 Want to create a new skill? Check out:
 1. [CONTRIBUTING.md](../CONTRIBUTING.md) - How to contribute
-2. [docs/SKILL_ANATOMY.md](../docs/SKILL_ANATOMY.md) - Skill structure guide
+2. [docs/contributors/skill-anatomy.md](../docs/contributors/skill-anatomy.md) - Skill structure guide
 3. `@skill-creator` - Use this skill to create new skills!
 
 **Basic structure:**
@@ -198,4 +198,4 @@ Found a skill that needs improvement? Want to add a new skill?
 
 ---
 
-**Need help?** Check the [FAQ](../docs/FAQ.md) or open an issue on GitHub!
+**Need help?** Check the [FAQ](../docs/users/faq.md) or open an issue on GitHub!

@@ -2,9 +2,9 @@
 
 Generated at: 2026-02-08T00:00:00.000Z
 
-Total skills: 1271
+Total skills: 1272
 
-## architecture (78)
+## architecture (79)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -91,6 +91,7 @@ pagef... | robius, widget | robius, widget, critical, triggers, apply, textorima
 | `testing-patterns` | Jest testing patterns, factory functions, mocking strategies, and TDD workflow. Use when writing unit tests, creating test factories, or following TDD red-gr... |  | testing, jest, factory, functions, mocking, tdd, writing, unit, tests, creating, test, factories |
 | `threejs-loaders` | Three.js asset loading - GLTF, textures, images, models, async patterns. Use when loading 3D models, textures, HDR environments, or managing loading progress. | threejs, loaders | threejs, loaders, three, js, asset, loading, gltf, textures, images, models, async, 3d |
 | `tool-design` | Build tools that agents can use effectively, including architectural reduction patterns |  | agents, effectively, including, architectural, reduction |
+| `uncle-bob-craft` | Use when performing code review, writing or refactoring code, or discussing architecture; complements clean-code and does not replace project linter/formatter. | clean-code, clean-architecture, solid, code-review, craftsmanship, uncle-bob | clean-code, clean-architecture, solid, code-review, craftsmanship, uncle-bob, uncle, bob, craft, performing, code, review |
 | `unreal-engine-cpp-pro` | Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance patterns, and best practices. | unreal, engine, cpp | unreal, engine, cpp, pro, development, covering, uobject, hygiene, performance |
 | `wcag-audit-patterns` | Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and remediation guidance. Use when auditing websites for accessibility, fi... | wcag, audit | wcag, audit, conduct, accessibility, audits, automated, testing, manual, verification, remediation, guidance, auditing |
 | `wordpress-theme-development` | WordPress theme development workflow covering theme architecture, template hierarchy, custom post types, block editor support, and responsive design. | wordpress, theme | wordpress, theme, development, covering, architecture, hierarchy, custom, post, types, block, editor, responsive |

@@ -11820,6 +11820,16 @@
     "date_added": null
   },
   {
+    "id": "uncle-bob-craft",
+    "path": "skills/uncle-bob-craft",
+    "category": "code-quality",
+    "name": "uncle-bob-craft",
+    "description": "Use when performing code review, writing or refactoring code, or discussing architecture; complements clean-code and does not replace project linter/formatter.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-03-06"
+  },
+  {
     "id": "uniprot-database",
     "path": "skills/uniprot-database",
     "category": "uncategorized",

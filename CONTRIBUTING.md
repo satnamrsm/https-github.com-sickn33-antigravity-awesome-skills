@@ -439,7 +439,9 @@ docs: add examples to react-best-practices
 
 ## Recognition
 
-All contributors are recognized in our [Contributors](https://github.com/sickn33/antigravity-awesome-skills/graphs/contributors) page!
+All contributors are recognized in our [Contributors](https://github.com/sickn33/antigravity-awesome-skills/graphs/contributors) page.
+
+We **always merge accepted PRs via GitHub** ("Squash and merge") so your PR shows as **Merged** and you get full credit. We do not close PRs after integrating your work locally. If your PR has merge conflicts, we will resolve them on the branch (or ask you to merge main and push) so we can merge it on GitHub.
 
 ---
 
