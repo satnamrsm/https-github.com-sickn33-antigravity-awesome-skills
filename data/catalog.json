@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-02-08T00:00:00.000Z",
-  "total": 1234,
+  "total": 1235,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -1991,17 +1991,17 @@
       "path": "skills/app-builder/SKILL.md"
     },
     {
-      "id": "app-builder/templates",
+      "id": "app-builder\\templates",
       "name": "templates",
       "description": "Project scaffolding templates for new applications. Use when creating new projects from scratch. Contains 12 templates for various tech stacks.",
       "category": "general",
       "tags": [
         "app",
-        "builder/templates"
+        "builder\\templates"
       ],
       "triggers": [
         "app",
-        "builder/templates",
+        "builder\\templates",
         "scaffolding",
         "new",
         "applications",
@@ -13789,18 +13789,18 @@
       "path": "skills/game-development/SKILL.md"
     },
     {
-      "id": "game-development/2d-games",
+      "id": "game-development\\2d-games",
       "name": "2d-games",
       "description": "2D game development principles. Sprites, tilemaps, physics, camera.",
       "category": "general",
       "tags": [
         "game",
-        "development/2d",
+        "development\\2d",
         "games"
       ],
       "triggers": [
         "game",
-        "development/2d",
+        "development\\2d",
         "games",
         "2d",
         "development",
@@ -13813,18 +13813,18 @@
       "path": "skills/game-development/2d-games/SKILL.md"
     },
     {
-      "id": "game-development/3d-games",
+      "id": "game-development\\3d-games",
       "name": "3d-games",
       "description": "3D game development principles. Rendering, shaders, physics, cameras.",
       "category": "general",
       "tags": [
         "game",
-        "development/3d",
+        "development\\3d",
         "games"
       ],
       "triggers": [
         "game",
-        "development/3d",
+        "development\\3d",
         "games",
         "3d",
         "development",
@@ -13837,18 +13837,18 @@
       "path": "skills/game-development/3d-games/SKILL.md"
     },
     {
-      "id": "game-development/game-art",
+      "id": "game-development\\game-art",
       "name": "game-art",
       "description": "Game art principles. Visual style selection, asset pipeline, animation workflow.",
       "category": "infrastructure",
       "tags": [
         "game",
-        "development/game",
+        "development\\game",
         "art"
       ],
       "triggers": [
         "game",
-        "development/game",
+        "development\\game",
         "art",
         "principles",
         "visual",
@@ -13861,18 +13861,18 @@
       "path": "skills/game-development/game-art/SKILL.md"
     },
     {
-      "id": "game-development/game-audio",
+      "id": "game-development\\game-audio",
       "name": "game-audio",
       "description": "Game audio principles. Sound design, music integration, adaptive audio systems.",
       "category": "general",
       "tags": [
         "game",
-        "development/game",
+        "development\\game",
         "audio"
       ],
       "triggers": [
         "game",
-        "development/game",
+        "development\\game",
         "audio",
         "principles",
         "sound",
@@ -13883,17 +13883,17 @@
       "path": "skills/game-development/game-audio/SKILL.md"
     },
     {
-      "id": "game-development/game-design",
+      "id": "game-development\\game-design",
       "name": "game-design",
       "description": "Game design principles. GDD structure, balancing, player psychology, progression.",
       "category": "general",
       "tags": [
         "game",
-        "development/game"
+        "development\\game"
       ],
       "triggers": [
         "game",
-        "development/game",
+        "development\\game",
         "principles",
         "gdd",
         "structure",
@@ -13905,18 +13905,18 @@
       "path": "skills/game-development/game-design/SKILL.md"
     },
     {
-      "id": "game-development/mobile-games",
+      "id": "game-development\\mobile-games",
       "name": "mobile-games",
       "description": "Mobile game development principles. Touch input, battery, performance, app stores.",
       "category": "development",
       "tags": [
         "game",
-        "development/mobile",
+        "development\\mobile",
         "games"
       ],
       "triggers": [
         "game",
-        "development/mobile",
+        "development\\mobile",
         "games",
         "mobile",
         "development",
@@ -13931,17 +13931,17 @@
       "path": "skills/game-development/mobile-games/SKILL.md"
     },
     {
-      "id": "game-development/multiplayer",
+      "id": "game-development\\multiplayer",
       "name": "multiplayer",
       "description": "Multiplayer game development principles. Architecture, networking, synchronization.",
       "category": "architecture",
       "tags": [
         "game",
-        "development/multiplayer"
+        "development\\multiplayer"
       ],
       "triggers": [
         "game",
-        "development/multiplayer",
+        "development\\multiplayer",
         "multiplayer",
         "development",
         "principles",
@@ -13952,18 +13952,18 @@
       "path": "skills/game-development/multiplayer/SKILL.md"
     },
     {
-      "id": "game-development/pc-games",
+      "id": "game-development\\pc-games",
       "name": "pc-games",
       "description": "PC and console game development principles. Engine selection, platform features, optimization strategies.",
       "category": "general",
       "tags": [
         "game",
-        "development/pc",
+        "development\\pc",
         "games"
       ],
       "triggers": [
         "game",
-        "development/pc",
+        "development\\pc",
         "games",
         "pc",
         "console",
@@ -13978,18 +13978,18 @@
       "path": "skills/game-development/pc-games/SKILL.md"
     },
     {
-      "id": "game-development/vr-ar",
+      "id": "game-development\\vr-ar",
       "name": "vr-ar",
       "description": "VR/AR development principles. Comfort, interaction, performance requirements.",
       "category": "general",
       "tags": [
         "game",
-        "development/vr",
+        "development\\vr",
         "ar"
       ],
       "triggers": [
         "game",
-        "development/vr",
+        "development\\vr",
         "ar",
         "vr",
         "development",
@@ -14002,18 +14002,18 @@
       "path": "skills/game-development/vr-ar/SKILL.md"
     },
     {
-      "id": "game-development/web-games",
+      "id": "game-development\\web-games",
       "name": "web-games",
       "description": "Web browser game development principles. Framework selection, WebGPU, optimization, PWA.",
       "category": "general",
       "tags": [
         "game",
-        "development/web",
+        "development\\web",
         "games"
       ],
       "triggers": [
         "game",
-        "development/web",
+        "development\\web",
         "games",
         "web",
         "browser",
@@ -17241,15 +17241,15 @@
       "path": "skills/leiloeiro-risco/SKILL.md"
     },
     {
-      "id": "libreoffice/base",
+      "id": "libreoffice\\base",
       "name": "base",
       "description": "Database management, forms, reports, and data operations with LibreOffice Base.",
       "category": "data-ai",
       "tags": [
-        "libreoffice/base"
+        "libreoffice\\base"
       ],
       "triggers": [
-        "libreoffice/base",
+        "libreoffice\\base",
         "base",
         "database",
         "forms",
@@ -17261,15 +17261,15 @@
       "path": "skills/libreoffice/base/SKILL.md"
     },
     {
-      "id": "libreoffice/calc",
+      "id": "libreoffice\\calc",
       "name": "calc",
       "description": "Spreadsheet creation, format conversion (ODS/XLSX/CSV), formulas, data automation with LibreOffice Calc.",
       "category": "data-ai",
       "tags": [
-        "libreoffice/calc"
+        "libreoffice\\calc"
       ],
       "triggers": [
-        "libreoffice/calc",
+        "libreoffice\\calc",
         "calc",
         "spreadsheet",
         "creation",
@@ -17285,15 +17285,15 @@
       "path": "skills/libreoffice/calc/SKILL.md"
     },
     {
-      "id": "libreoffice/draw",
+      "id": "libreoffice\\draw",
       "name": "draw",
       "description": "Vector graphics and diagram creation, format conversion (ODG/SVG/PDF) with LibreOffice Draw.",
       "category": "data-ai",
       "tags": [
-        "libreoffice/draw"
+        "libreoffice\\draw"
       ],
       "triggers": [
-        "libreoffice/draw",
+        "libreoffice\\draw",
         "draw",
         "vector",
         "graphics",
@@ -17309,15 +17309,15 @@
       "path": "skills/libreoffice/draw/SKILL.md"
     },
     {
-      "id": "libreoffice/impress",
+      "id": "libreoffice\\impress",
       "name": "impress",
       "description": "Presentation creation, format conversion (ODP/PPTX/PDF), slide automation with LibreOffice Impress.",
       "category": "workflow",
       "tags": [
-        "libreoffice/impress"
+        "libreoffice\\impress"
       ],
       "triggers": [
-        "libreoffice/impress",
+        "libreoffice\\impress",
         "impress",
         "presentation",
         "creation",
@@ -17333,15 +17333,15 @@
       "path": "skills/libreoffice/impress/SKILL.md"
     },
     {
-      "id": "libreoffice/writer",
+      "id": "libreoffice\\writer",
       "name": "writer",
       "description": "Document creation, format conversion (ODT/DOCX/PDF), mail merge, and automation with LibreOffice Writer.",
       "category": "workflow",
       "tags": [
-        "libreoffice/writer"
+        "libreoffice\\writer"
       ],
       "triggers": [
-        "libreoffice/writer",
+        "libreoffice\\writer",
         "writer",
         "document",
         "creation",
@@ -21575,6 +21575,34 @@
       "path": "skills/php-pro/SKILL.md"
     },
     {
+      "id": "pipecat-friday-agent",
+      "name": "pipecat-friday-agent",
+      "description": "Build a low-latency, Iron Man-inspired tactical voice assistant (F.R.I.D.A.Y.) using Pipecat, Gemini, and OpenAI.",
+      "category": "development",
+      "tags": [
+        "pipecat",
+        "voice",
+        "gemini",
+        "openai",
+        "python"
+      ],
+      "triggers": [
+        "pipecat",
+        "voice",
+        "gemini",
+        "openai",
+        "python",
+        "friday",
+        "agent",
+        "low",
+        "latency",
+        "iron",
+        "man",
+        "inspired"
+      ],
+      "path": "skills/pipecat-friday-agent/SKILL.md"
+    },
+    {
       "id": "pipedrive-automation",
       "name": "pipedrive-automation",
       "description": "Automate Pipedrive CRM operations including deals, contacts, organizations, activities, notes, and pipeline management via Rube MCP (Composio). Always search tools first for current schemas.",
@@ -24411,7 +24439,7 @@
       "path": "skills/security-scanning-security-sast/SKILL.md"
     },
     {
-      "id": "security/aws-compliance-checker",
+      "id": "security\\aws-compliance-checker",
       "name": "aws-compliance-checker",
       "description": "Automated compliance checking against CIS, PCI-DSS, HIPAA, and SOC 2 benchmarks",
       "category": "security",
@@ -24441,7 +24469,7 @@
       "path": "skills/security/aws-compliance-checker/SKILL.md"
     },
     {
-      "id": "security/aws-iam-best-practices",
+      "id": "security\\aws-iam-best-practices",
       "name": "aws-iam-best-practices",
       "description": "IAM policy review, hardening, and least privilege implementation",
       "category": "security",
@@ -24470,7 +24498,7 @@
       "path": "skills/security/aws-iam-best-practices/SKILL.md"
     },
     {
-      "id": "security/aws-secrets-rotation",
+      "id": "security\\aws-secrets-rotation",
       "name": "aws-secrets-rotation",
       "description": "Automate AWS secrets rotation for RDS, API keys, and credentials",
       "category": "security",
@@ -24499,7 +24527,7 @@
       "path": "skills/security/aws-secrets-rotation/SKILL.md"
     },
     {
-      "id": "security/aws-security-audit",
+      "id": "security\\aws-security-audit",
       "name": "aws-security-audit",
       "description": "Comprehensive AWS security posture assessment using AWS CLI and security best practices",
       "category": "security",
