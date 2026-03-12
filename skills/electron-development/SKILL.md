@@ -325,7 +325,7 @@ win.webContents.on('will-navigate', (event, url) => {
 
 // Prevent new windows from being opened
 win.webContents.setWindowOpenHandler(({ url }) => {
-    try {
+  try {
     const externalUrl = new URL(url);
     const allowedHosts = new Set(['example.com', 'docs.example.com']);
 
