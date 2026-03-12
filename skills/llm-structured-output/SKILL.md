@@ -58,6 +58,112 @@ Do NOT use this skill when:
 
 ## Examples
 
+### Example 1: OpenAI Structured Outputs with Pydantic (Python)
+
+```python
+from pydantic import BaseModel, Field
+from openai import OpenAI
+from enum import Enum
+
+class Sentiment(str, Enum):
+    positive = "positive"
+    negative = "negative"
+    neutral = "neutral"
+
+class ReviewAnalysis(BaseModel):
+    sentiment: Sentiment = Field(description="Overall sentiment of the review")
+    key_topics: list[str] = Field(description="Main topics mentioned, max 5")
+    purchase_intent: bool = Field(description="Whether the reviewer would buy again")
+    confidence_score: float = Field(ge=0.0, le=1.0, description="Model confidence 0-1")
+
+client = OpenAI()
+response = client.beta.chat.completions.parse(
+    model="gpt-4o-2024-08-06",
+    messages=[
+        {"role": "system", "content": "Extract structured review analysis."},
+        {"role": "user", "content": "This laptop is amazing. The battery lasts forever and the keyboard feels great. Definitely buying the next version."}
+    ],
+    response_format=ReviewAnalysis,
+)
+result = response.choices[0].message.parsed
+# result.sentiment == Sentiment.positive
+# result.key_topics == ["battery life", "keyboard"]
+# result.purchase_intent == True
+```
+
+### Example 2: Anthropic tool_use for Structured Extraction (Python)
+
+```python
+import anthropic
+
+client = anthropic.Anthropic()
+response = client.messages.create(
+    model="claude-sonnet-4-20250514",
+    max_tokens=1024,
+    system="You are a data extraction system. Use the provided tool to return structured data.",
+    tools=[{
+        "name": "extract_invoice",
+        "description": "Extract invoice fields from text",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "vendor_name": {"type": "string", "description": "Company that issued the invoice"},
+                "total_amount": {"type": "number", "description": "Total amount in USD"},
+                "line_items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "description": {"type": "string"},
+                            "quantity": {"type": "integer"},
+                            "unit_price": {"type": "number"}
+                        },
+                        "required": ["description", "quantity", "unit_price"]
+                    }
+                }
+            },
+            "required": ["vendor_name", "total_amount", "line_items"]
+        }
+    }],
+    tool_choice={"type": "tool", "name": "extract_invoice"},
+    messages=[{"role": "user", "content": "Invoice from Acme Corp: 3x Widget A at $10 each, 1x Widget B at $25. Total: $55."}]
+)
+# Find the tool_use block — do NOT parse text blocks
+tool_block = next(b for b in response.content if b.type == "tool_use")
+invoice = tool_block.input
+# invoice["vendor_name"] == "Acme Corp"
+# invoice["total_amount"] == 55.0
+```
+
+### Example 3: TypeScript with Zod + zodResponseFormat
+
+```typescript
+import OpenAI from "openai";
+import { z } from "zod";
+import { zodResponseFormat } from "openai/helpers/zod";
+
+const EventSchema = z.object({
+  event_name: z.string().describe("Name of the event"),
+  date: z.string().describe("ISO 8601 date string"),
+  location: z.string().describe("City and venue"),
+  attendee_count: z.number().int().describe("Expected number of attendees"),
+  is_virtual: z.boolean().describe("Whether the event is online-only"),
+});
+
+const client = new OpenAI();
+const completion = await client.beta.chat.completions.parse({
+  model: "gpt-4o-2024-08-06",
+  messages: [
+    { role: "system", content: "Extract event details from the text." },
+    { role: "user", content: "Tech Summit 2025 in Austin at the Convention Center on March 15th. Expecting 2000 attendees, in-person only." },
+  ],
+  response_format: zodResponseFormat(EventSchema, "event_extraction"),
+});
+const event = completion.choices[0].message.parsed;
+// event.event_name === "Tech Summit 2025"
+// event.is_virtual === false
+```
+
 ## Never Do This
 
 ## Edge Cases
