@@ -602,7 +602,7 @@ no matching field, parse error, widget... | makepad, reference | makepad, refere
 | `zod-validation-expert` | Expert in Zod — TypeScript-first schema validation. Covers parsing, custom errors, refinements, type inference, and integration with React Hook Form, Next.js... | zod, validation | zod, validation, typescript, first, schema, covers, parsing, custom, errors, refinements, type, inference |
 | `zustand-store-ts` | Create Zustand stores with TypeScript, subscribeWithSelector middleware, and proper state/action separation. Use when building React state management, creati... | zustand, store, ts | zustand, store, ts, stores, typescript, subscribewithselector, middleware, proper, state, action, separation, building |
 
-## general (297)
+## general (298)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -618,6 +618,7 @@ no matching field, parse error, widget... | makepad, reference | makepad, refere
 | `angular-migration` | Migrate from AngularJS to Angular using hybrid mode, incremental component rewriting, and dependency injection updates. Use when upgrading AngularJS applicat... | angular, migration | angular, migration, migrate, angularjs, hybrid, mode, incremental, component, rewriting, dependency, injection, updates |
 | `anti-reversing-techniques` | Understand anti-reversing, obfuscation, and protection techniques encountered during software analysis. Use when analyzing protected binaries, bypassing anti... | anti, reversing, techniques | anti, reversing, techniques, understand, obfuscation, protection, encountered, during, software, analysis, analyzing, protected |
 | `antigravity-design-expert` | Core UI/UX engineering skill for building highly interactive, spatial, weightless, and glassmorphism-based web interfaces using GSAP and 3D CSS. | antigravity | antigravity, core, ui, ux, engineering, skill, building, highly, interactive, spatial, weightless, glassmorphism |
+| `antigravity-skill-orchestrator` | A meta-skill that understands task requirements, dynamically selects appropriate skills, tracks successful skill combinations using agent-memory-mcp, and pre... | [orchestration, meta-skill, agent-memory, task-evaluation] | [orchestration, meta-skill, agent-memory, task-evaluation], antigravity, skill, orchestrator, meta, understands, task, requirements, dynamically |
 | `apify-lead-generation` | Generates B2B/B2C leads by scraping Google Maps, websites, Instagram, TikTok, Facebook, LinkedIn, YouTube, and Google Search. Use when user asks to find lead... | apify, lead, generation | apify, lead, generation, generates, b2b, b2c, leads, scraping, google, maps, websites, instagram |
 | `apify-trend-analysis` | Discover and track emerging trends across Google Trends, Instagram, Facebook, YouTube, and TikTok to inform content strategy. | apify, trend | apify, trend, analysis, discover, track, emerging, trends, google, instagram, facebook, youtube, tiktok |
 | `app-builder` | Main application building orchestrator. Creates full-stack applications from natural language requests. Determines project type, selects tech stack, coordina... | app, builder | app, builder, main, application, building, orchestrator, creates, full, stack, applications, natural, language |

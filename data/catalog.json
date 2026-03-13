@@ -1432,6 +1432,33 @@
       "path": "skills/antigravity-design-expert/SKILL.md"
     },
     {
+      "id": "antigravity-skill-orchestrator",
+      "name": "antigravity-skill-orchestrator",
+      "description": "A meta-skill that understands task requirements, dynamically selects appropriate skills, tracks successful skill combinations using agent-memory-mcp, and prevents skill overuse for simple tasks.",
+      "category": "general",
+      "tags": [
+        "[orchestration",
+        "meta-skill",
+        "agent-memory",
+        "task-evaluation]"
+      ],
+      "triggers": [
+        "[orchestration",
+        "meta-skill",
+        "agent-memory",
+        "task-evaluation]",
+        "antigravity",
+        "skill",
+        "orchestrator",
+        "meta",
+        "understands",
+        "task",
+        "requirements",
+        "dynamically"
+      ],
+      "path": "skills/antigravity-skill-orchestrator/SKILL.md"
+    },
+    {
       "id": "antigravity-workflows",
       "name": "antigravity-workflows",
       "description": "Orchestrate multiple Antigravity skills through guided workflows for SaaS MVP delivery, security audits, AI agent builds, and browser QA.",
