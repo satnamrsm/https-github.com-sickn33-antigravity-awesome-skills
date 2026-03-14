@@ -1,6 +1,6 @@
 ---
 name: analyze-project
-description: Root Cause Analyst for Antigravity coding sessions. Reads brain/ artifacts (task.md, plans, walkthroughs + .resolved.N versions), classifies scope changes, rework shapes, root causes (SPEC_AMBIGUITY, REPO_FRAGILITY, etc.), clusters friction hotspots, and auto-updates project-health-state + prompt_improvement_tips.md. Use when you want a forensic post-mortem of why sessions succeeded or failed.
+description: Forensic session analyzer: classifies scope changes, rework shapes, root causes, friction hotspots, and auto-improves future prompts/project health via brain/ artifacts.
 version: "1.0"
 tags: [analysis, diagnostics, meta, root-cause, project-health, session-review]
 ---
