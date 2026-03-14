@@ -97,7 +97,7 @@ Once installed, just talk to your AI naturally.
 
 | Tool            | Status          | Path                                                                  |
 | :-------------- | :-------------- | :-------------------------------------------------------------------- |
-| **Claude Code** | ✅ Full Support | `.claude/skills/`                                                     |
+| **Claude Code** | ✅ Full Support | `.claude/skills/` or install via `/plugin marketplace add sickn33/antigravity-awesome-skills` |
 | **Gemini CLI**  | ✅ Full Support | `.gemini/skills/`                                                     |
 | **Codex CLI**   | ✅ Full Support | `.codex/skills/`                                                      |
 | **Kiro CLI**    | ✅ Full Support | Global: `~/.kiro/skills/` · Workspace: `.kiro/skills/`                |
@@ -123,6 +123,13 @@ _Check the [Skill Catalog](../../CATALOG.md) for the full list._
 ---
 
 ## FAQ
+
+If you prefer Claude Code's plugin marketplace flow instead of copying into `.claude/skills/`, use:
+
+```text
+/plugin marketplace add sickn33/antigravity-awesome-skills
+/plugin install antigravity-awesome-skills
+```
 
 **Q: Do I need to install all 1,254+ skills?**
 A: You clone the whole repo once; your AI only _reads_ the skills you invoke (or that are relevant), so it stays lightweight. **Starter Packs** in [bundles.md](bundles.md) are curated lists to help you discover the right skills for your role—they don't change how you install.

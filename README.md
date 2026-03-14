@@ -144,11 +144,22 @@ Use @brainstorming to plan a SaaS MVP.
 
 4. Browse starter collections in [`docs/users/bundles.md`](docs/users/bundles.md) and execution playbooks in [`docs/users/workflows.md`](docs/users/workflows.md).
 
+### Option B: Claude Code plugin marketplace
+
+If you use Claude Code and prefer the plugin marketplace flow, this repository now ships a root `.claude-plugin/marketplace.json`:
+
+```text
+/plugin marketplace add sickn33/antigravity-awesome-skills
+/plugin install antigravity-awesome-skills
+```
+
+This installs the same repository-backed skill library through Claude Code's plugin marketplace entrypoint.
+
 ## Choose Your Tool
 
 | Tool           | Install                                                | First Use                                            |
 | -------------- | ------------------------------------------------------ | ---------------------------------------------------- |
-| Claude Code    | `npx antigravity-awesome-skills --claude`              | `>> /brainstorming help me plan a feature`           |
+| Claude Code    | `npx antigravity-awesome-skills --claude` or Claude plugin marketplace | `>> /brainstorming help me plan a feature` |
 | Cursor         | `npx antigravity-awesome-skills --cursor`              | `@brainstorming help me plan a feature`              |
 | Gemini CLI     | `npx antigravity-awesome-skills --gemini`              | `Use brainstorming to plan a feature`                |
 | Codex CLI      | `npx antigravity-awesome-skills --codex`               | `Use brainstorming to plan a feature`                |

@@ -28,3 +28,8 @@
 - Added scripted workflow entrypoints: `npm run pr:preflight`, `npm run release:preflight`, `npm run release:prepare -- X.Y.Z`, and `npm run release:publish -- X.Y.Z`.
 - Split PR CI into `pr-policy`, `source-validation`, and `artifact-preview` so PRs stay source-only, policy failures are explicit, and generated drift is previewed separately from source validation.
 - Updated `CONTRIBUTING.md` and `.github/PULL_REQUEST_TEMPLATE.md` so contributors are told not to commit derived files and to enable `Allow edits from maintainers`.
+
+# Maintenance Walkthrough - 2026-03-14
+
+- Added root Claude Code plugin marketplace support via `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`, exposing the repository as a single plugin entry that points at the existing `skills/` tree.
+- Updated the user onboarding trinity (`README.md`, `docs/users/getting-started.md`, `docs/users/faq.md`) so Claude Code users can install via `/plugin marketplace add sickn33/antigravity-awesome-skills` in addition to the existing `npx` installer flow.

@@ -105,6 +105,15 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skill
 - Codex CLI: `.codex/skills/`
 - Cursor: `.cursor/skills/` or project root
 
+**Claude Code plugin marketplace alternative:**
+
+```text
+/plugin marketplace add sickn33/antigravity-awesome-skills
+/plugin install antigravity-awesome-skills
+```
+
+This repository now includes `.claude-plugin/marketplace.json` and `.claude-plugin/plugin.json` so Claude Code can install the same skill tree through the plugin marketplace.
+
 ### Does this work with Windows?
 
 **Yes**, but some "Official" skills use **symlinks** which Windows handles poorly by default.
